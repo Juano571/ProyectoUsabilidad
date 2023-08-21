@@ -1,15 +1,15 @@
 import './App.css'
-import Banner from './components/Banner'
 import Footer from './components/Footer'
+import Banner from './components/Banner'
 
 function App() {
 
   return (
 
     <>
-      <Banner/>
+      <Banner />
       <Footer />
-      
+
     </>
   )
 }
