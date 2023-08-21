@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import Banner from './components/Banner'
 import BodyLandingPage from './components/BodyLandingPage'
 import Help from './components/Help'
+import DetallesPensionAlimenticia from './components/DetallesPensionAlimenticia'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 
     <>
       <Banner />
+      <DetallesPensionAlimenticia />
       <BodyLandingPage/>
       <Footer />
       <Help />
