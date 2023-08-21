@@ -19,19 +19,40 @@ const Footer: React.FC = () => {
     // console.log(dataEs)
 
     return (
-        <div className="flex">
-            <div className="w-1/3 bg-gray-300 p-4">
-                Contenido de la primera columna
+        <footer className="flex text-white bg-[#245383] bg-cover bg-[url('/images/shiny-overlay.svg')] p-5">
+            <div className="w-1/3 text-left my-4">
+                <ul>
+                    <li>
+                    Construyendo un
+                    </li>
+                    <li>
+                    servicio de justicia para
+                    </li>
+                    <li>la paz social</li>
+                </ul>
             </div>
 
-            <div className="w-1/3 bg-gray-400 p-4">
-                Contenido de la segunda columna
+            <div className="w-1/3 text-center my-4">
+                <ul>
+                    <li>
+                        CONTÁCTANOS
+                    </li>
+                    <li>
+                        02 3953600 / 02 3999800
+                    </li>
+                    <li>
+                        EXT: 25821
+                    </li>
+                    <li>
+                        escuela.juducial@funcionjudicial.gob.ec
+                    </li>
+                </ul>
             </div>
 
-            <div className="w-1/3 bg-gray-500 p-4">
-                Contenido de la tercera columna
+            <div className="flex w-1/3 my-4 justify-end">
+                <img src="/images/gobierno.svg" alt="Logo del gobierno del Ecuador" />
             </div>
-        </div>
+        </footer >
     )
 }
 
