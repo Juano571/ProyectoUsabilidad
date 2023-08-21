@@ -5,6 +5,7 @@ import BodyLandingPage from './components/BodyLandingPage'
 import Help from './components/Help'
 import DetallesPensionAlimenticia from './components/DetallesPensionAlimenticia'
 import HelpGlossary from './components/HelpGlossary'
+import BannerDetalles from './components/BannerDetalles'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
 
     <>
       <Banner />
+      <BannerDetalles />
       <DetallesPensionAlimenticia />
       <BodyLandingPage/>
       <Footer />
