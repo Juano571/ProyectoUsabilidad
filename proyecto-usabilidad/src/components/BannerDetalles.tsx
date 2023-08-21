@@ -1,16 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import React, { useState } from 'react';
 
 const BannerDetalles = () => {
-    const [colorChanged, setColorChanged] = useState(false);
-
-  const handleClick = () => {
-    setColorChanged(!colorChanged);
-  };
-
-  const divClasses = 'bg-${colorChanged ? "[#245383]" : "gray"}-500 text-white p-4 cursor-pointer';
-
     return (
         <div className='w-full bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover'>
             <div className='w-full flex-col items-center justify-around'>
