@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div className='bg-slate-900'>
+    <div className='bg-[#245383]'>
       <div className='flex w-80%'>
         <div>
           <img src="/images/cdjlogo.svg" alt="Logo del Consejo de la Judicatura" />
