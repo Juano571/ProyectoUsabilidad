@@ -13,7 +13,6 @@ function App() {
       <BodyLandingPage/>
       <Footer />
       <Help />
-
     </>
   )
 }
