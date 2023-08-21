@@ -20,16 +20,12 @@ const Footer: React.FC = () => {
 
     return (
         <footer className="flex text-white bg-[#245383] bg-cover bg-[url('/images/shiny-overlay.svg')] p-5">
-            <div className="w-1/3 text-left my-4">
-                <ul>
-                    <li>
-                    Construyendo un
-                    </li>
-                    <li>
-                    servicio de justicia para
-                    </li>
-                    <li>la paz social</li>
-                </ul>
+            <div className="w-1/3 text-left">
+                <div className='w-2/3 text-xl te '>
+                    <p>
+                        Construyendo un servicio de justicia para la paz social
+                    </p>
+                </div>
             </div>
 
             <div className="w-1/3 text-center my-4">
