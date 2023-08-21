@@ -4,12 +4,12 @@ const TableNoResults = () => {
     return (
         <table>
             <thead>
-                <tr>
+                <tr className="bg-[#245383] text-white">
                     <th>Resultado no encontrado</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className="border px-4 py-2">
                     <td>El número de cédula 1723427348. perteneciente a Juan Sebastián Posso Carrasquilla, no cuenta con juicios de pensionaes alimenticias registrados.</td>
                 </tr>
             </tbody>

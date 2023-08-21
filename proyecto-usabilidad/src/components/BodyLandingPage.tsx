@@ -1,4 +1,8 @@
 import React from 'react'
+import TableNoResults from './TableNoResults'
+import TableSearchResults from './TableSearchResults'
+import TableMovimientosPendientes from './TableInformacionGeneral'
+import TableInformacionGeneral from './TableMovimientosPendientes2'
 
 const BodyLandingPage = () => {
     return (
@@ -19,6 +23,10 @@ const BodyLandingPage = () => {
                 <input type="text"  required/>
                 <button id="buscar">Buscar</button>
             </form>
+            <TableNoResults/>
+            <TableSearchResults/>
+            <TableMovimientosPendientes/>
+            <TableInformacionGeneral/>
         </body>
     )
 }

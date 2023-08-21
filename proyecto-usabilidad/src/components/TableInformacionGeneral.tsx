@@ -3,105 +3,51 @@ import React from 'react'
 const TableInformacionGeneral = () => {
     return (
         <table>
-            <thead>
-                <th>No</th>
-                <th>Año</th>
-                <th>Mes</th>
-                <th>Concepto</th>
-                <th>Valor de Deuda</th>
-                <th>Estado</th>
-                <th>Fecha da deuda</th>
+            <thead className="bg-[#245383] text-white">
+                <th className="px-4 py-2">No</th>
+                <th className="px-4 py-2">Fecha de deuda</th>
+                <th className="px-4 py-2">Concepto</th>
+                <th className="px-4 py-2">Estado</th>
+                <th className="px-4 py-2">Valor de deuda</th>
+                <th className="px-4 py-2">Valor pagado</th>
+                <th className="px-4 py-2">Transacción</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>2022</td>
-                    <td>1</td>
-                    <td>Febrero</td>
-                    <td>Pensón</td>
-                    <td>$ 281.57</td>
-                    <td>Pendiente</td>
-                    <td>01/Febrero/2022</td>
+                    <td className="border px-4 py-2">1</td>
+                    <td className="border px-4 py-2">01/Febrero/2022</td>
+                    <td className="border px-4 py-2">Pensión</td>
+                    <td className="border px-4 py-2">Pagado</td>
+                    <td className="border px-4 py-2">$ 281.57</td>
+                    <td className="border px-4 py-2">$ 281.57</td>
+                    <td className="border px-4 py-2">Acreditado</td>
                 </tr>
                 <tr>
-                    <td>2022</td>
-                    <td>2</td>
-                    <td>Febrero</td>
-                    <td>Interés</td>
-                    <td>$ 31.10</td>
-                    <td>Pendiente</td>
-                    <td>01/Febrero/2022</td>
+                    <td className="border px-4 py-2">2</td>
+                    <td className="border px-4 py-2">01/Febrero/2022</td>
+                    <td className="border px-4 py-2">Interés</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                    <td className="border px-4 py-2">$ 31.10</td>
+                    <td className="border px-4 py-2">$ 0</td>
+                    <td className="border px-4 py-2">Pendiente</td>
                 </tr>
                 <tr>
-                    <td>2022</td>
-                    <td>3</td>
-                    <td>Marzo</td>
-                    <td>Pensón</td>
-                    <td>$ 281.57</td>
-                    <td>Pendiente</td>
-                    <td>01/Marzo/2022</td>
+                    <td className="border px-4 py-2">3</td>
+                    <td className="border px-4 py-2">01/Marzo/2022</td>
+                    <td className="border px-4 py-2">Pensión</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                    <td className="border px-4 py-2">$ 281.37</td>
+                    <td className="border px-4 py-2">$ 0</td>
+                    <td className="border px-4 py-2">Pendiente</td>
                 </tr>
                 <tr>
-                    <td>2022</td>
-                    <td>4</td>
-                    <td>Marzo</td>
-                    <td>Interés</td>
-                    <td>$ 31.10</td>
-                    <td>Pendiente</td>
-                    <td>01/Marzo/2022</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>5</td>
-                    <td>Abril</td>
-                    <td>Pensón</td>
-                    <td>$ 281.57</td>
-                    <td>Pendiente</td>
-                    <td>01/Abril/2022</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>6</td>
-                    <td>Abril</td>
-                    <td>Interés</td>
-                    <td>$ 31.10</td>
-                    <td>Pendiente</td>
-                    <td>01/Abril/2022</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>7</td>
-                    <td>Mayo</td>
-                    <td>Pensón</td>
-                    <td>$ 281.57</td>
-                    <td>Pendiente</td>
-                    <td>01/Mayo/2022</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>8</td>
-                    <td>Mayo</td>
-                    <td>Interés</td>
-                    <td>$ 31.10</td>
-                    <td>Pendiente</td>
-                    <td>01/Mayo/2022</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>9</td>
-                    <td>Junio</td>
-                    <td>Pensón</td>
-                    <td>$ 281.57</td>
-                    <td>Pendiente</td>
-                    <td>01/Junio/2022</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>10</td>
-                    <td>Junio</td>
-                    <td>Interés</td>
-                    <td>$ 31.10</td>
-                    <td>Pendiente</td>
-                    <td>01/Junio/2022</td>
+                    <td className="border px-4 py-2">4</td>
+                    <td className="border px-4 py-2">01/Marzo/2022</td>
+                    <td className="border px-4 py-2">Acuerdo de pago</td>
+                    <td className="border px-4 py-2">Pagado</td>
+                    <td className="border px-4 py-2">$ 500</td>
+                    <td className="border px-4 py-2">$ 500</td>
+                    <td className="border px-4 py-2">Acreditado</td>
                 </tr>
             </tbody>
         </table>
