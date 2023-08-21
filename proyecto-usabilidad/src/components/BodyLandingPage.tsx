@@ -19,8 +19,6 @@ const BodyLandingPage = () => {
                 <input type="text"  required/>
                 <button id="buscar">Buscar</button>
             </form>
-
-
         </body>
     )
 }
