@@ -87,7 +87,7 @@
         "Titulo5txt1": "Indexación 2016",
         "Titulo5txt4": "Pensión definitiva",
         "Titulo5txt5": "Pensión Provisional"
-    }
+    },
     "Footer": {
         "slogan": "Construyendo un servicio de justicia para la paz social",
         "contacto": "CONTÁCTENOS 023953600/023999800 EXT: 25821 escuela.judicial@funcionjudicial.gob.ec"
@@ -130,7 +130,7 @@
         "subtotalInter": "Subtotal de intereses:",
         "totalPensioIntereses": "Total pensiones más intereses:",
         "totalPendiente": "Total pendiente",
-        "otrasPendiente": "Número de otras pensiones pendientes:",
+        "otrasPendiente": "Número de otras pensiones pendientes:"
     },
     "BannerGlosario": {
         "titulo": "GLOSARIO DE TÉRMINOS",
