@@ -1,0 +1,146 @@
+{
+    "Header": {
+        "Titulo": "Yachayninchik: Mikhuy yuyaykuna pakarichiy"
+    },
+    "ComboBox": {
+        "CódigoTarjeta": "Taripay yachaypi ñawi",
+        "Numero": "Yanapa llaqtayuq justisia númeru",
+        "CodigoImbabura": "Imbabura kama kódigu qayllata",
+        "CedulaRepresentante": "Yachachiqmi kikinpa ñawi",
+        "CedulaDeudor": "Yachachiqmi kikinpa ñawi",
+        "Identificador": "Rikhunaqa kachkaninku"
+    },
+    "Ayuda": {
+        "Titulo": "Yanapa",
+        "Servicio": "Ruray",
+        "GuiaUso": "Yachachiq wasipi",
+        "Glosario": "Yachachiq yuyay",
+        "Serviciotxt": "Ñuqa yanapa kay pachapi, mikhuy yuyaykuna pakarichiy nisqa llaqtayuq kikinpa ñawi kachkaninkuwan ñuqa, warmikuna watanpi kikinpa ñawi kachkaninkuwan ñuqa.",
+        "GuiaUsotxt": "Maypi chaymanqa wakin yanapa kachkaninka p'unchayninchikmi yachanichuqpi rimanaq.",
+        "GlosarioCódigoTarjeta": "Taripay yachaypi ñawi",
+        "GlosarioNumero": "Yanapa llaqtayuq justisia númeru",
+        "GlosarioCodigoImbabura": "Imbabura kama kódigu qayllata",
+        "GlosarioCedulaRepresentante": "Yachachiqmi kikinpa ñawi",
+        "GlosarioCedulaDeudor": "Yachachiqmi kikinpa ñawi",
+        "GlosarioIdentificador": "Rikhunaqa kachkaninku",
+        "GlosarioCódigoTarjetatxt": "Qillqa ñawi nisqapi ñawin. Mikhuy yuyaykuna pakarichiywan, yachay qallta ñawiwanqa, llaqtayuqmi kikinpa taripay ñawiwanqa yanapa llaqtayuq kikinpa ñawiwanpi huk wasi.",
+        "GlosarioNumerotxt": "Qillqa ñawi nisqa yanapa llaqtayuq justisia ñawin. Mikhuy yuyaykuna pakarichiywan, yanapa llaqtayuqmi kikinpa yanapa llaqtayuq justisiawanmi kachkaninku ñawinpi yanapa llaqtayuq kikinpa ñawi kaywanmi.",
+        "GlosarioCodigoImbaburatxt": "Kutiyuq kaywanmi, Imbabura llaqtapi chaymi kachkaninku kaypi qillqa ñawi ñisqa kama qallta ñawi. Mana rimanakuyta kachkaninku tukuy kama rimaykunapi.",
+        "GlosarioCedulaRepresentantetxt": "Yachachiqmi kikinpa ñawi ñisqa llaqtayuqmi kikinpa ñawinpi. Yachachiqmi kikinpa, abogado wan p'anqayta, chaymi kikinpa yanapa kachkaninku llaqtayuq kikinpi ñawinpi kaywanmi.",
+        "GlosarioCedulaDeudortxt": "Yachachiqmi kikinpa ñawi ñisqa kikinpa ñawi ñawinpi. Kaymi, kikinpa kikinpi yanapa kachkaninku kaywanmi ñisqawan ñawinpi, mikhuy yuyaykuna pakarichiykunawan.",
+        "GlosarioIdentificadortxt": "Kama qallta ñawi kachkaninku ñisqa, kay qillqa ñawi kaywanmi yanapa kachkaninku kikinpi ñawinpi kaywanmi. Yanapa kachkaninku kikinpi ñawinpi, yanapa yachachiqmi pachapi, mikhuy yuyaykuna pakarichiykunawan kikinpi kaywanmi."
+    },
+    "TablaResultadoEncontrado": {
+        "Titulo1": "Taripay yachaypi ñawi",
+        "Titulo2": "Yanapa llaqtayuq justisia númeru",
+        "Titulo3": "Llaqta ruraynin kachkaninku",
+        "Titulo4": "Wasiy ñawi",
+        "Titulo5": "Kikinpa kachkaninkuwan",
+        "Titulo6": "Detay",
+        "Titulo3txt1": "Tawantin Suyu Hatun Ñanpi Warmi, Warmikuna, Ñuqa yachachiqpa, Wanlla t'ikra yaykuna kachkaninku, Iñakitu parroquyapi, Qutu llaqtapi, Pichincha suyupi",
+        "Titululo4txt1": "Mikhuy yachachiqpa",
+        "Titulo5txt1": "Yachachiq kikinpi",
+        "Titulo5txt2": "Kikinpa kikinpi",
+        "Titulo6txtBtn": "Rikuy"
+    },
+    "TablaInformacionGeneral": {
+        "Titulo1": "Mana",
+        "Titulo2": "Deuda ñawi",
+        "Titulo3": "Yuyaynin",
+        "Titulo4": "Rikuy",
+        "Titulo5": "Deuda ñawi",
+        "Titulo6": "Yatay",
+        "Titulo7": "Transacción",
+        "Titulo3txt1": "Mikhuy yachachiqpa",
+        "Titulo3txt2": "Lluqsinchi",
+        "Titulo3txt3": "Yachachiq yachanichuq",
+        "Titulo4txt1": "Yatay",
+        "Titulo4txt2": "P'unchay",
+        "Titulo7txt1": "Manariy",
+        "Titulo7txt2": "P'unchay"
+    },
+    "TablaMovimientosPendientes": {
+        "Titulo1": "Mana",
+        "Titulo2": "Watapi",
+        "Titulo3": "Killa",
+        "Titulo4": "Yuyaynin",
+        "Titulo5": "Deuda ñawi",
+        "Titulo6": "Rikuy",
+        "Titulo7": "Deuda ñawi ñawi",
+        "Titulo4txt1": "Mikhuy yachachiqpa",
+        "Titulo4txt2": "Lluqsinchi",
+        "Titulo4txt3": "Yachachiq yachanichuq",
+        "Titulo6txt1": "Yatay",
+        "Titulo6txt2": "P'unchay"
+    },
+    "TablaIndexaciones": {
+        "Titulo1": "Mikhuy",
+        "Titulo2": "Yachachiq wasiyninmi p'unchawqa",
+        "Titulo3": "Resolución",
+        "Titulo4": "Yuyaynin kachkaninku",
+        "Titulo5": "Observaciones",
+        "Titulo1txt1": "Indexación",
+        "Titulo1txt2": "Definitivo",
+        "Titulo1txt3": "Provisional",
+        "Titulo5txt3": "Indexación 2023",
+        "Titulo5txt2": "Indexación 2018",
+        "Titulo5txt1": "Indexación 2016",
+        "Titulo5txt4": "Mikhuy yachachiqpa definitivo",
+        "Titulo5txt5": "Mikhuy yachachiqpa provisional"
+    },
+    "Footer": {
+        "slogan": "Minka yachachiqmi warmi llaqtayuqmi kawsaypaq kaypi ñawi rurayta churakuy",
+        "contacto": "Ñuqa ñawinmi 023953600/023999800 EXT: 25821 wasi yachachiqmi@funcionjudicial.gob.ec"
+    },
+    "LabelComboBox": {
+        "códigoTarjeta": "Taripay yachaypi ñawi:",
+        "numero": "Yanapa llaqtayuq justisia númeru:",
+        "codigoImbabura": "Imbabura kama kódigu qayllata:",
+        "cedulaRepresentante": "Ñuqa ñawinmi kikinpa ñawi:",
+        "cedulaDeudor": "Ñuqa ñawinmi kikinpa ñawi:",
+        "IdNUT": "Rikhunaqa kachkaninku (NUT)"
+    },
+    "MainBody": {
+        "titulo": "MINKA YACHACHIQMI MANTACHINAPAK KAWSAYNINCHIK ÑAWIY",
+        "criterio": "Yachanichuq yuyayninmi",
+        "btnBuscar": "Riy",
+        "resultadoConsulta": "MINKA YACHANICHUQMANTA HAYK'ANAYKUNA"
+    },
+    "BannerInfoGeneral": {
+        "titulo": "MINKA YACHACHIQMI MANTACHINAPAK KAWSAYNINCHIK QILLQA ÑAWI",
+        "infogeneral": "Minka Yachachiqmi",
+        "movpendientes": "Punchay Yachanichuqkuna",
+        "indexac": "MINKA YACHACHIQMI"
+    },
+    "InfoGeneral": {
+        "intervi": "Minka yachanichuqkuna",
+        "representante": "Warmikunataq minka yachachiq:",
+        "obligado": "Kikinpi kikinpi:",
+        "infotitulo": "Minka Yachachiqmi:",
+        "numTarjeta": "Taripay ñawi ñumberu:",
+        "provincia": "Suyu/Kunti:",
+        "dependencia": "Llaqta ruraynin kachkaninku:",
+        "unidadjuris": "Hatun ñanpi Minka Warmi, Warmikuna, Ñuqa yachachiqpa, Wanlla t'ikra yaykuna kachkaninku, Qutu llaqtapi",
+        "tipopen": "Mikhuy kikinpi:",
+        "pensactual": "Mikhuy yuyay:"
+    },
+    "FooterTablaMovPendientes": {
+        "numPensPendiente": "Punchay mikhuy kikinpi ñumberu:",
+        "subtotalPens": "Mikhuy kikinpi subtotay:",
+        "subtotalInter": "Lluqsinchi subtotay:",
+        "totalPensioIntereses": "Mikhuy kikinpi lluqsinchi yachachiqmi:",
+        "totalPendiente": "Punchaychik yachachiqmi",
+        "otrasPendiente": "Mana mikhuy mikhuykunataq punchaychik yachachiqmi ñumberu:"
+    },
+    "BannerGlosario": {
+        "titulo": "YACHACHIQ YUYAY ÑAWI",
+        "btnCerrar": "Churakuy"
+    },
+    "BodyGlosario": {
+        "indexa": "MINKA YACHACHIQMI:",
+        "defIndexa": "Mikhuy yachachiqpa pachapi huk mikhuy yuyaypaqmi yachanichuqmi. Ñawinchik wata watan, ñuqa yachachiq t'ikrachu kikinpi Salario Básico maymi.",
+        "tipos": "Mikhuy yachachiqmanta wata t'ikray:",
+        "def": "Mikhuy:",
+        "prov": "P'unchay:"
+    }
+}
