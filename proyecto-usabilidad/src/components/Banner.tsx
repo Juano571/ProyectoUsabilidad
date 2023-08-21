@@ -1,9 +1,8 @@
 import React from 'react'
-import '../App.css'
 
 const Banner = () => {
   return (
-    <div className='bg-[#245383]'>
+    <div className='bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover '>
       <div className='flex items-center justify-around'>
         <div className='flex ml-8 my-4 w-1/3'>
           <img src="/images/cdjlogo.svg" alt="Logo del Consejo de la Judicatura" />
