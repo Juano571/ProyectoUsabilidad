@@ -2,6 +2,7 @@ import React from 'react'
 
 const TableInformacionGeneral = () => {
     return (
+        <div>
         <table>
             <thead className="bg-[#245383] text-white">
                 <th className="px-4 py-2">No</th>
@@ -51,6 +52,7 @@ const TableInformacionGeneral = () => {
                 </tr>
             </tbody>
         </table>
+        </div>
     )
 }
 
