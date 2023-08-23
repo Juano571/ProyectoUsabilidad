@@ -2,7 +2,7 @@ import React from 'react'
 
 const TableMovimientosPendientes = () => {
     return (
-        <table>
+        <div>        <table>
             <thead className="bg-[#245383] text-white">
                 <th className="px-4 py-2">No</th>
                 <th className="px-4 py-2">Año</th>
@@ -105,6 +105,7 @@ const TableMovimientosPendientes = () => {
                 </tr>
             </tbody>
         </table>
+        </div>
     )
 }
 

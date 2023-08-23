@@ -17,8 +17,6 @@ const TableNoResults = () => {
                 </tr>
             </tbody>
         </table>
-        <TableInformacionGeneral/>
-        <ComboBoxLanguages/>
         </div>
     )
 }
