@@ -19,16 +19,16 @@ const Footer: React.FC = () => {
     // console.log(dataEs)
 
     return (
-        <footer className="flex text-white bg-[#245383] bg-cover bg-[url('/images/shiny-overlay.svg')] p-5">
-            <div className='mx-8 py-4 flex items-center justify-around'>
-                <div className='w-2/3 text-xl te '>
+        <footer className="px-8 py-4  flex justify-between text-white bg-[#245383] bg-cover bg-[url('/images/shiny-overlay.svg')]">
+            <div className='flex items-center justify-around'>
+                <div className='text-xl'>
                     <p>
                         Construyendo un servicio de justicia para la paz social
                     </p>
                 </div>
             </div>
 
-            <div className="w-1/3 text-center my-4">
+            <div className="w-2/3 text-center my-4 text-xl">
                 <ul>
                     <li>
                         CONTÁCTANOS
