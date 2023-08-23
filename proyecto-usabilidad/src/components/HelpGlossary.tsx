@@ -5,9 +5,9 @@ const HelpGlossary = () => {
         <div>
             <div> Ayuda </div>
             <div>
-                <div>
+                
                     <h3> Glosario </h3>
-                </div>
+                
                 <div>
                     <img src="" alt="Imagen de un diccionario" />
                 </div>
@@ -17,15 +17,15 @@ const HelpGlossary = () => {
                         <p>Definicion de datos de representante legal...............</p>
                     </details>
                     <details>
-                        <summary>Datos del deudor principal</summary>
+                        <summary >Datos del deudor principal</summary>
                         <p>Definicion de datos del deudor principal...............</p>
                     </details>
                     <details>
-                        <summary>Codigo de tarjeta </summary>
+                        <summary >Codigo de tarjeta </summary>
                         <p>Definicion codigo de tarjeta...............</p>
                     </details>
                     <details>
-                        <summary>Codigo Imbabura</summary>
+                        <summary >Codigo Imbabura</summary>
                         <p>Definicion de codigo imbabura...............</p>
                     </details>
                     <details>

@@ -140,7 +140,9 @@
         "indexa": "Indexación:",
         "defIndexa": "Proceso del incremento o subida de la pensión alimenticia la misma que se lleva a cabo cada año y esta se realiza automáticamente de acuerdo al Salario Básico.",
         "tipos": "Tipos de indexación:",
-        "def": "Definitiva:",
-        "prov": "Provisional:"
+        "definitiva": "Definitiva:",
+        "defDefinitiva": "Pensión que se fija después de la audiencia realizada, en base al patrimonio del demandado. ",
+        "provisional": "Provisional:",
+        "defProvisional": "Pensión que se fija en base a la Tabla de Pensiones Alimenticias Mínima."
     }
 }

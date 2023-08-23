@@ -137,10 +137,12 @@
         "btnCerrar": "Churakuy"
     },
     "BodyGlosario": {
-        "indexa": "MINKA YACHACHIQMI:",
-        "defIndexa": "Mikhuy yachachiqpa pachapi huk mikhuy yuyaypaqmi yachanichuqmi. Ñawinchik wata watan, ñuqa yachachiq t'ikrachu kikinpi Salario Básico maymi.",
-        "tipos": "Mikhuy yachachiqmanta wata t'ikray:",
-        "def": "Mikhuy:",
-        "prov": "P'unchay:"
+        "indexa": "Indexación:",
+        "defIndexa": "Kamachinata wiñaynin:",
+        "tipos": "Indexaciónpi kasqan:",
+        "definitiva": "Hatunpi:",
+        "defDefinitiva": "Audienciapi qayanta hatunpi kamay:",
+        "provisional": "Piñanpi:",
+        "defProvisional": "Tablapaq Kamachiqpi piñanpi kamay."
     }
 }

@@ -1,15 +1,19 @@
+import { faBook, faCirclePlay, faIdCard, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 const Help = () => {
     return (
         <div>
-            <div> Ayuda </div>
+            <div>
+                <FontAwesomeIcon icon={faQuestionCircle} className="w-5 h-5 mr-2 bg-white text-[#245383] rounded-full text-center" />
+                <span> Ayuda </span>
+            </div>
             <div>
                 <div>
-                    <h3> Servicio </h3>
-                </div>
-                <div>
-                    <a href="link al video"><img src="" alt="Botón para reproducir el video" /> </a>
+                    <h1>Servicio</h1>
+
+                    <FontAwesomeIcon icon={faIdCard } className="w-5 h-5 mr-2 bg-white text-[#245383] rounded-full text-center" />
                 </div>
                 <div>
                     <p>
@@ -21,9 +25,10 @@ const Help = () => {
             </div>
 
             <div>
-                <div> <h3> Guía de uso </h3> </div>
                 <div>
-                    <a href="link al video"><img src="" alt="Botón para reproducir el video" /> </a>
+                    <h1>Guia de uso</h1>
+                    <a href="link al video"><FontAwesomeIcon icon={faCirclePlay} className="w-5 h-5 mr-2 bg-white text-[#245383] rounded-full" /></a>
+
                 </div>
                 <div>
                     <p>

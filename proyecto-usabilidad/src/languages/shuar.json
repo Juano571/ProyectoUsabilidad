@@ -140,7 +140,9 @@
 		"indexa": "Indexación:",
 		"defIndexa": "Shúang waini kúts tsankiai kámap nanki kúts tsankiai shiá, kútska tsúka tsankiai wakanaininkiai nanki wakanaininkiai nanki tsankiai tsankiai kútska tsankiai tsúka nanki wakanaininkiai nanki wakanaininkiai.",
 		"tipos": "Tsankiai kútska indexación:",
-		"def": "Kútska:",
-		"prov": "Kútska tsúka:"
+		"definitiva": "Kútska:",
+		"defDefinitiva": "Kúts tsankiai wakanaininkiai nanki shúang waini kútska kúmuk wakanaininkiai, waini tsúka kútska wakanaininkiai.",
+		"provisional": "Kútska tsúka:",
+		"defProvisional": "Kúts tsankiai wakanaininkiai nanki waini shúang kúts tsankiai wakanaininkiai nanki waini tsankiai wakanaininkiai kútska."
 	}
 }
