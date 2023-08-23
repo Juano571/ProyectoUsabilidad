@@ -50,6 +50,60 @@ const TableInformacionGeneral = () => {
                     <td className="border px-4 py-2">$ 500</td>
                     <td className="border px-4 py-2">Acreditado</td>
                 </tr>
+                <tr>
+                    <td className="border px-4 py-2">5</td>
+                    <td className="border px-4 py-2">01/Abril/2022</td>
+                    <td className="border px-4 py-2">Pensión</td>
+                    <td className="border px-4 py-2">Pagado</td>
+                    <td className="border px-4 py-2">$ 100</td>
+                    <td className="border px-4 py-2">$ 100</td>
+                    <td className="border px-4 py-2">Acreditado</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">6</td>
+                    <td className="border px-4 py-2">01/Abril/2022</td>
+                    <td className="border px-4 py-2">Adicional</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                    <td className="border px-4 py-2">$ 31.10</td>
+                    <td className="border px-4 py-2">$ 31.10</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">7</td>
+                    <td className="border px-4 py-2">01/Mayo/2022</td>
+                    <td className="border px-4 py-2">Pensión</td>
+                    <td className="border px-4 py-2">Pagado</td>
+                    <td className="border px-4 py-2">$ 281.37</td>
+                    <td className="border px-4 py-2">$ 281.37</td>
+                    <td className="border px-4 py-2">Acreditado</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">8</td>
+                    <td className="border px-4 py-2">01/Mayo/2022</td>
+                    <td className="border px-4 py-2">Interés</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                    <td className="border px-4 py-2">$ 31.10</td>
+                    <td className="border px-4 py-2">$ 0</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">9</td>
+                    <td className="border px-4 py-2">01/Junio/2022</td>
+                    <td className="border px-4 py-2">Pensión</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                    <td className="border px-4 py-2">$ 281.37</td>
+                    <td className="border px-4 py-2">$ 0</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                </tr>
+                <tr>
+                    <td className="border px-4 py-2">10</td>
+                    <td className="border px-4 py-2">01/Junio/2022</td>
+                    <td className="border px-4 py-2">Interés</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                    <td className="border px-4 py-2">$ 31.10</td>
+                    <td className="border px-4 py-2">$ 0</td>
+                    <td className="border px-4 py-2">Pendiente</td>
+                </tr>
             </tbody>
         </table>
         </div>
