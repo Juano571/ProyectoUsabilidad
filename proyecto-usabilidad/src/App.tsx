@@ -13,12 +13,8 @@ function App() {
 
     <>
       <Banner />
-      <BannerDetalles />
-      <DetallesPensionAlimenticia />
       <BodyLandingPage/>
-      <Footer />
-      <Help />
-      <HelpGlossary />
+      <Footer/>
     </>
   )
 }
