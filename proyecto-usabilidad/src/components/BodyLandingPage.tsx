@@ -49,11 +49,12 @@ const BodyLandingPage = () => {
     };
 
     return (
-        <body className='flex flex-col'>
+        <body className='flex flex-col h-screen'>
             <Banner></Banner>
-            <div className='p-8 flex-grow justify-around'>
-                <div className='flex h-screen'>
-                    <div className='flex-col w-11/12'>
+            <div className='py-8 pl-8 flex-grow justify-around'>
+                <div className='flex'
+                    style={{ minHeight: '100%' }}>
+                    <div className='flex-col w-11/12 mr-[4%]'>
                         <h1 className='text-3xl text-[#245383] font-medium uppercase'>Consulta de Tarjetas de Pensión Alimentaria</h1>
                         <div className='flex py-10'>
                             <form>
@@ -65,9 +66,9 @@ const BodyLandingPage = () => {
                                             <option value="codigo_tarjeta">Código de tarjeta</option>
                                             <option value="proceso_judicial">Número de proceso judicial</option>
                                             <option value="codigo_imbabura">Código Anterior Imbabura</option>
-                                            <option value="representante_legal">Cédula representante Legal</option>
+                                            <option value="representante_legal">Cédula representante legal</option>
                                             <option value="deudor_principal">Cédula deudor principal</option>
-                                            <option value="identificador_aprobacion">Identificador de Aprobación</option>
+                                            <option value="identificador_aprobacion">Identificador de aprobación</option>
                                         </select>
                                     </div>
                                 </div>
@@ -96,7 +97,7 @@ const BodyLandingPage = () => {
                     </div>
                     <div className='col-span-1 flex flex-col justify-between'>
                         <div>
-                            <FontAwesomeIcon icon={faGlobe} className="w-10 h-10 mr-2 text-[#245383]" />
+                            <FontAwesomeIcon icon={faGlobe} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                         </div>
                         <div>
                         <FontAwesomeIcon icon={faQuestionCircle} className="w-10 h-10 mr-2 text-[#245383]" />
@@ -104,7 +105,7 @@ const BodyLandingPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+            <Footer ></Footer>
         </body>
     )
 }
