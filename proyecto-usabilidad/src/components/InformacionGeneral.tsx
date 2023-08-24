@@ -54,7 +54,7 @@ const InformacionGeneral = () => {
                     </ul>
                 </div >
                 <div className='relative top-14 ml-10 mt-12'>
-                    <TableInformacionGeneral />
+                    <TableInformacionGeneral/>
                 </div>
             </div>
         </>
