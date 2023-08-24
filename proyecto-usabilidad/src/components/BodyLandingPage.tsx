@@ -61,7 +61,7 @@ const BodyLandingPage = () => {
                                 <div className='flex'>
                                     <label className='text-lg font-medium w-80'>Criterio de Búsqueda:</label>
                                     <div>
-                                        <select onChange={handleComboBoxChange} className='mx-2 px-4 py-1 p-2 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
+                                        <select onChange={handleComboBoxChange} className='sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
                                             <option value="cedula">Número de cédula</option>
                                             <option value="codigo_tarjeta">Código de tarjeta</option>
                                             <option value="proceso_judicial">Número de proceso judicial</option>
@@ -72,25 +72,28 @@ const BodyLandingPage = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className='my-5 flex'>
-                                    {selectedOption && <label className='text-lg font-medium w-80' >Ingrese {selectedOption}:</label>}
-                                    <div>
+                                <div className='my-5 flex flex-col sm:flex-row sm:items-center'>
+                                    {selectedOption && <label className=' sm:text-lg font-medium sm:w-80 mb-2 sm:mb-0' >Ingrese {selectedOption}:</label>}
+                                    <div className="w-full sm:w-80">
                                         <input type="text"
                                             pattern="\d*"
                                             inputMode="numeric"
                                             value={value}
                                             onChange={handleInputChange}
-                                            placeholder={selectedOption}//"Ingrese su número de cédula"
-                                            className="w-80 mx-2 py-1 px-4 border focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
-                                            style={{ display: isParagraphVisible ? 'inline' : 'none' }}
+                                            placeholder={selectedOption}
+                                            className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
+                                            style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                             required />
                                     </div>
-                                    <button onClick={handleSearchClick}
-                                        style={{ display: isParagraphVisible ? 'inline' : 'none' }}
-                                        className='w-32 mx-6 rounded-3xl py-1 border bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
-                                    >Buscar
-                                    </button>
+                                    <div className='pl-4'>
+                                        <button onClick={handleSearchClick}
+                                            style={{ display: isParagraphVisible ? 'block' : 'none' }}
+                                            className='w-full sm:w-32 sm:mt-0 rounded-3xl py-2 border bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
+                                        >Buscar
+                                        </button>
+                                    </div>
                                 </div>
+
                             </form>
                         </div>
                         {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
@@ -100,7 +103,7 @@ const BodyLandingPage = () => {
                             <FontAwesomeIcon icon={faGlobe} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                         </div>
                         <div>
-                        <FontAwesomeIcon icon={faQuestionCircle} className="w-10 h-10 mr-2 text-[#245383]" />
+                            <FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                         </div>
                     </div>
                 </div>
