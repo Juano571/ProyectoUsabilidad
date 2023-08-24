@@ -49,7 +49,7 @@ const BodyLandingPage = () => {
         <body className='flex flex-col min-h-screen'>
             <Banner></Banner>
             <div className='p-8 flex-grow'>
-                <h1 className='text-3xl text-[#245383] font-normal uppercase'>Consulta de Tarjetas de Pensión Alimentaria</h1>
+                <h1 className='text-3xl text-[#245383] font-medium uppercase'>Consulta de Tarjetas de Pensión Alimentaria</h1>
                 <div className='flex py-10'>
                     <form>
                         <div className='flex'>
