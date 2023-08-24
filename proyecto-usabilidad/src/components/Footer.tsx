@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
 
-            <div className="w-2/3 text-center my-4 text-xl">
+            <div className="w-2/3 text-center my-3 text-lg">
                 <ul>
                     <li>
                         CONTÁCTANOS
