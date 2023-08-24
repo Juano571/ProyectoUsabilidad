@@ -11,23 +11,18 @@ const BodyLandingPage = () => {
 
 
     const handleSearchClick = (event: React.FormEvent) => {
-        
         event.preventDefault();
         setVerifyShowResults(true);
         if (value === '1710087683') {
             setShowResult(true); // Mostrar el resultado
-        } else {
+        } else if (value=='') {
+            setVerifyShowResults(false);
+        } else if (value==='1723427348') {
+            setShowResult(false);
+        }else{
             setShowResult(false); // Mostrar el resultado
         }
     };
-
-    const resultsControl=()=>{
-        if (showResult && showResult) {
-            
-        }
-    }
-
-
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const inputValue = event.target.value;
