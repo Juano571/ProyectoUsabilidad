@@ -8,26 +8,23 @@ const BodyLandingPage = () => {
     const [value, setValue] = useState<string>('');
     const [showResult, setShowResult] = useState<boolean>(false);
     const [verifyShowResult, setVerifyShowResults] = useState<boolean>(false);
+    const [selectedOption, setSelectedOption] = useState<string>('');
+    const [isParagraphVisible, setIsParagraphVisible] = useState<boolean>(false); 
 
 
     const handleSearchClick = (event: React.FormEvent) => {
-        
         event.preventDefault();
         setVerifyShowResults(true);
         if (value === '1710087683') {
             setShowResult(true); // Mostrar el resultado
-        } else {
+        } else if (value=='') {
+            setVerifyShowResults(false);
+        } else if (value==='1723427348') {
+            setShowResult(false);
+        }else{
             setShowResult(false); // Mostrar el resultado
         }
     };
-
-    const resultsControl=()=>{
-        if (showResult && showResult) {
-            
-        }
-    }
-
-
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const inputValue = event.target.value;
@@ -36,6 +33,16 @@ const BodyLandingPage = () => {
         if (/^\d*$/.test(inputValue) && inputValue.length <= 10) {
             setValue(inputValue);
         }
+    };
+
+    const handleComboBoxChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const selectedText = event.target.selectedOptions[0].text; // Obtener el texto seleccionado del combobox
+        setSelectedOption(selectedText);
+        handleToggleParagraph();
+    };
+
+    const handleToggleParagraph = () => {
+        setIsParagraphVisible(true); // Cambiar la visibilidad del párrafo
     };
 
     return (
@@ -47,8 +54,8 @@ const BodyLandingPage = () => {
                     <form>
                         <div>
                             <label className='text-lg font-medium'>Criterio de Búsqueda:</label>
-                            <select className='mx-8 px-4 py-1 p-2 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
-                                <option value="cedula">Cédula</option>
+                            <select onChange={handleComboBoxChange} className='mx-8 px-4 py-1 p-2 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
+                                <option value="cedula">Número de cédula</option>
                                 <option value="codigo_tarjeta">Código de Tarjeta</option>
                                 <option value="proceso_judicial">Número de Proceso Judicial</option>
                                 <option value="codigo_imbabura">Código Anterior Imbabura</option>
@@ -59,14 +66,15 @@ const BodyLandingPage = () => {
                             <button onClick={handleSearchClick}  className='w-32 rounded-3xl py-1 border bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'>Buscar</button>
                         </div>
                         <div className='my-5'>
-                            <label className='text-lg font-medium'>Número de Cédula:</label>
+                            {selectedOption &&  <label className='text-lg font-medium' >Ingrese {selectedOption} :</label>}
                             <input type="text"
                                 pattern="\d*"
                                 inputMode="numeric"
                                 value={value}
                                 onChange={handleInputChange}
-                                placeholder="Ingrese su número de cédula"
+                                placeholder={selectedOption}//"Ingrese su número de cédula"
                                 className="w-80 mx-12 py-1 px-4 border focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
+                                style={{ display: isParagraphVisible ? 'inline' : 'none' }}
                                 required />
                         </div>
                     </form>
