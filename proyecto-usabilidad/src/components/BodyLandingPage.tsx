@@ -3,6 +3,9 @@ import TableNoResults from './TableNoResults'
 import Footer from './Footer'
 import Banner from './Banner'
 import TableSearchResults from './TableSearchResults';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestionCircle, faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 
 const BodyLandingPage = () => {
     const [value, setValue] = useState<string>('');
@@ -46,48 +49,60 @@ const BodyLandingPage = () => {
     };
 
     return (
-        <body className='flex flex-col min-h-screen'>
+        <body className='flex flex-col'>
             <Banner></Banner>
-            <div className='p-8 flex-grow'>
-                <h1 className='text-3xl text-[#245383] font-medium uppercase'>Consulta de Tarjetas de Pensión Alimentaria</h1>
-                <div className='flex py-10'>
-                    <form>
-                        <div className='flex'>
-                            <label className='text-lg font-medium w-80'>Criterio de Búsqueda:</label>
-                            <div>
-                                <select onChange={handleComboBoxChange} className='mx-2 px-4 py-1 p-2 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
-                                    <option value="cedula">Número de cédula</option>
-                                    <option value="codigo_tarjeta">Código de tarjeta</option>
-                                    <option value="proceso_judicial">Número de proceso judicial</option>
-                                    <option value="codigo_imbabura">Código Anterior Imbabura</option>
-                                    <option value="representante_legal">Cédula representante Legal</option>
-                                    <option value="deudor_principal">Cédula deudor principal</option>
-                                    <option value="identificador_aprobacion">Identificador de Aprobación</option>
-                                </select>
-                            </div>
+            <div className='p-8 flex-grow justify-around'>
+                <div className='flex h-screen'>
+                    <div className='flex-col w-11/12'>
+                        <h1 className='text-3xl text-[#245383] font-medium uppercase'>Consulta de Tarjetas de Pensión Alimentaria</h1>
+                        <div className='flex py-10'>
+                            <form>
+                                <div className='flex'>
+                                    <label className='text-lg font-medium w-80'>Criterio de Búsqueda:</label>
+                                    <div>
+                                        <select onChange={handleComboBoxChange} className='mx-2 px-4 py-1 p-2 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
+                                            <option value="cedula">Número de cédula</option>
+                                            <option value="codigo_tarjeta">Código de tarjeta</option>
+                                            <option value="proceso_judicial">Número de proceso judicial</option>
+                                            <option value="codigo_imbabura">Código Anterior Imbabura</option>
+                                            <option value="representante_legal">Cédula representante Legal</option>
+                                            <option value="deudor_principal">Cédula deudor principal</option>
+                                            <option value="identificador_aprobacion">Identificador de Aprobación</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className='my-5 flex'>
+                                    {selectedOption && <label className='text-lg font-medium w-80' >Ingrese {selectedOption}:</label>}
+                                    <div>
+                                        <input type="text"
+                                            pattern="\d*"
+                                            inputMode="numeric"
+                                            value={value}
+                                            onChange={handleInputChange}
+                                            placeholder={selectedOption}//"Ingrese su número de cédula"
+                                            className="w-80 mx-2 py-1 px-4 border focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
+                                            style={{ display: isParagraphVisible ? 'inline' : 'none' }}
+                                            required />
+                                    </div>
+                                    <button onClick={handleSearchClick}
+                                        style={{ display: isParagraphVisible ? 'inline' : 'none' }}
+                                        className='w-32 mx-6 rounded-3xl py-1 border bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
+                                    >Buscar
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                        <div className='my-5 flex'>
-                            {selectedOption && <label className='text-lg font-medium w-80' >Ingrese {selectedOption}:</label>}
-                            <div>
-                                <input type="text"
-                                    pattern="\d*"
-                                    inputMode="numeric"
-                                    value={value}
-                                    onChange={handleInputChange}
-                                    placeholder={selectedOption}//"Ingrese su número de cédula"
-                                    className="w-80 mx-2 py-1 px-4 border focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
-                                    style={{ display: isParagraphVisible ? 'inline' : 'none' }}
-                                    required />
-                            </div>
-                            <button onClick={handleSearchClick}
-                                style={{ display: isParagraphVisible ? 'inline' : 'none' }}
-                                className='w-32 mx-6 rounded-3xl py-1 border bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
-                            >Buscar
-                            </button>
+                        {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
+                    </div>
+                    <div className='col-span-1 flex flex-col justify-between'>
+                        <div>
+                            <FontAwesomeIcon icon={faGlobe} className="w-10 h-10 mr-2 text-[#245383]" />
                         </div>
-                    </form>
+                        <div>
+                        <FontAwesomeIcon icon={faQuestionCircle} className="w-10 h-10 mr-2 text-[#245383]" />
+                        </div>
+                    </div>
                 </div>
-                {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
             </div>
             <Footer></Footer>
         </body>
