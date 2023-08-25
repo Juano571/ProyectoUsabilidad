@@ -61,7 +61,8 @@ const BodyLandingPage = () => {
                                 <div className='flex'>
                                     <label className='text-lg font-medium w-80'>Criterio de Búsqueda:</label>
                                     <div>
-                                        <select onChange={handleComboBoxChange} className='sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
+                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800'>
+                                            <option value='df' hidden>Seleccione un Criterio</option>
                                             <option value="cedula">Número de cédula</option>
                                             <option value="codigo_tarjeta">Código de tarjeta</option>
                                             <option value="proceso_judicial">Número de proceso judicial</option>

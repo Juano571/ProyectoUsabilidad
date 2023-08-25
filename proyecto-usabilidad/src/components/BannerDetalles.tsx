@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const BannerDetalles = () => {
+const BannerDetalles = ({closeModal}) => {
     return (
         <div className='w-full bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover'>
             <div className='w-full flex-col items-center justify-around'>
@@ -9,7 +9,7 @@ const BannerDetalles = () => {
                     <div className='text-4xl text-white'>
                         <h1>DETALLE DE TARJETA DE PENSIÓN ALIMENTICIA</h1>
                     </div>
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white hover:bg-red-600 cursor-pointer">
+                    <div  onClick={closeModal} className="flex items-center justify-center w-8 h-8 rounded-full bg-white hover:bg-red-600 cursor-pointer">
                         <FontAwesomeIcon icon={faTimes} className="text-gray-600" />
                     </div>
                 </div>

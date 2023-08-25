@@ -1,6 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
+import FloatWindow from './FloatWindowMain';
+
 
 const TableSearchResults = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+
     return (
         <div>
             <table>
@@ -24,10 +36,14 @@ const TableSearchResults = () => {
                             <div>Representante Legal: OLIMPIA ESMERALDA QUIROZ CARRERA</div>
                             <div>Obligado Principal: JORGE ENRIQUE REVELO ROSERO</div>
                         </td>
-                        <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Revisar</button></td>
+                        <td className="px-4 py-2"><button onClick={openModal} className="bg-blue-500 text-white px-4 py-2 rounded">Revisar</button></td>
                     </tr>
                 </tbody>
             </table>
+            
+            {isModalOpen && (
+                <FloatWindow closeModal={closeModal} />
+            )}
         </div>
     )
 }
