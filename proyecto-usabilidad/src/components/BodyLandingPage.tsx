@@ -103,8 +103,9 @@ const BodyLandingPage = () => {
                         <div>
                             <FontAwesomeIcon icon={faGlobe} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                         </div>
-                        <div>
-                            <FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                        <div >
+                            <a href="https://markdown.es/sintaxis-markdown/#imagenes" target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
+                            
                         </div>
                     </div>
                 </div>
