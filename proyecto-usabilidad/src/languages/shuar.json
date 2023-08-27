@@ -1,6 +1,7 @@
 {
     "Header": {
-        "Titulo": "Jat taiwiam wampuininkiai shuakanaininkiai taim jipi pankiawanka"
+        "Titulo": "Jat taiwiam wampuininkiai shuakanaininkiai taim jipi pankiawanka",
+		"TituloAlimentaria" : "Kampankintsa wampuna wampuna wampuna piwankintska penshún awa"
     },
     "ComboBox": {
         "CódigoTarjeta": "Numa shawi tayana",

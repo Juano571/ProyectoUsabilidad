@@ -1,6 +1,7 @@
 {
     "Header": {
-        "Titulo": "Yachayninchik: Mikhuy yuyaykuna pakarichiy"
+        "Titulo": "Yachayninchik: Mikhuy yuyaykuna pakarichiy",
+        "TituloAlimentaria" : "Yachanakuy yanapa taripay yanapa yanapa pensión alimenticia"
     },
     "ComboBox": {
         "CódigoTarjeta": "Taripay yachaypi ñawi",
