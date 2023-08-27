@@ -122,7 +122,8 @@
 		"cedulaRepresentante": "Numa tsintsan wakanaininkiai:",
 		"cedulaDeudor": "Numa tsintsan wakanaininkiai:",
 		"IdNUT": "Wats kúts yáka aatsainkiai (NUT)",
-        "ejemplo": "tsankiai"
+        "ejemplo": "tsankiai",
+        "obligatorio": "Kuka mukaninaqa kamachiq shunka"
 	},
 
 	"mainBody": {

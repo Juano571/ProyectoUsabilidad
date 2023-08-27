@@ -121,7 +121,8 @@
         "cedulaRepresentante": "Ñuqa ñawinmi kikinpa ñawi:",
         "cedulaDeudor": "Ñuqa ñawinmi kikinpa ñawi:",
         "IdNUT": "Rikhunaqa kachkaninku (NUT)",
-        "ejemplo": "uya"
+        "ejemplo": "uya",
+        "obligatorio": "Kaypi riqsichinaqa kamachiqpi"
     },
 
     "mainBody": {
