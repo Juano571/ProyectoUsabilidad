@@ -5,7 +5,7 @@ const TableIndexaciones = () => {
     const {t} = useTranslation();
 
     return (
-        <div>
+        <div className='flex justify-center'>
             <table className="table-auto">
                 <thead>
                     <tr className="bg-[#245383] text-white">

@@ -7,9 +7,9 @@ const InformacionGeneral = () => {
     const {t} = useTranslation();
     return (
         <>
-            <BannerDetalles />
+        {/*<BannerDetalles closeModal={closeModal}/>*/}
             <div className='flex justify-center'>
-                <div className='relative top-14 p-5'>
+                <div className='relative top-1 p-5'>
                     <ul>
                         <li className='text-white bg-[#245383] w-64 text-left font-semibold rounded-xl p-1 pl-3 m-2'>
                             {t("tablaResultadoEncontrado.titulo5")}
@@ -55,7 +55,7 @@ const InformacionGeneral = () => {
                         </li>
                     </ul>
                 </div >
-                <div className='relative top-14 ml-10 mt-12'>
+                <div className='relative mt-5'>
                     <TableInformacionGeneral/>
                 </div>
             </div>

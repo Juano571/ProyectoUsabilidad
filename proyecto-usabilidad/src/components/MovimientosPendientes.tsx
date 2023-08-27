@@ -4,10 +4,11 @@ import TableMovimientosPendientes from './TableMovimientosPendientes2'
 import { useTranslation } from 'react-i18next';
 
 const MovimientosPendientes = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
-        <>
-            <BannerDetalles />
+
+        <div>
+            {/*<BannerDetalles closeModal={closeModal}/>*/}
             <div className='relative flex justify-center top-14'>
                 <TableMovimientosPendientes />
             </div>
@@ -72,7 +73,9 @@ const MovimientosPendientes = () => {
                 </div>
             </div>
 
-        </>
+        </div>
+
+
     )
 }
 
