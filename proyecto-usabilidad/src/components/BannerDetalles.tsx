@@ -6,7 +6,7 @@ const BannerDetalles = ({closeModal}) => {
     const { t } = useTranslation();
 
     return (
-        <div className='w-full bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover'>
+        <div className='min-w-max bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover'>
             <div className='w-full flex-col items-center justify-around'>
                 <div className='flex justify-between mx-8 py-4'>
                     <div className='text-4xl text-white'>
