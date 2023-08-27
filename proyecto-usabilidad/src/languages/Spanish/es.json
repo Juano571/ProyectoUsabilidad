@@ -1,6 +1,6 @@
 {
     "Header": {
-        "Titulo": "Sistema único de pensiones alimenticias",
+        "titulo": "Sistema único de pensiones alimenticias",
         "TituloAlimentaria" : "Consulta de tarjetas de pensión alimenticia"
     },
     "ComboBox": {
