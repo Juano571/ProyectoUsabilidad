@@ -9,7 +9,8 @@
         "codigoImbabura": "Código anterior Imbabura",
         "cedulaRepresentante": "Cédula representante legal",
         "cedulaDeudor": "Cédula del deudor principal",
-        "identificador": "Identificador de aprobación"
+        "identificador": "Identificador de aprobación",
+        "seleccionarCriterio": "Seleccionar Criterio"
     },
 
     "ayuda": {
