@@ -29,22 +29,24 @@ const Help = () => {
                         <h1 className='text-3xl text-[#245383] font-medium uppercase'>{t("ayuda.titulo")}</h1>
                         <div className='flex-col text-center items-center justify-center pt-8 ml-10'>
                             <div className='flex'>
-                                <FontAwesomeIcon icon={faIdCard} className="w-8 h-8 mr-5 bg-white text-[#245383] rounded-full" />
+                                <FontAwesomeIcon icon={faIdCard} className="w-8 h-8 mr-6 bg-white text-[#245383] rounded-full" />
                                 <h1 className='text-2xl font-semibold uppercase'>{t("ayuda.servicio")}</h1>
                             </div>
                             <div className='flex my-4'>
-                                <p className='w-[100%] text-justify'>
-                                {t("ayuda.serviciotxt")}
+                                <p className='w-[100%] text-justify ml-14'>
+                                    {t("ayuda.serviciotxt")}
                                 </p>
                             </div>
                         </div>
 
                         <div className='flex-col text-center items-center justify-center pt-8 ml-10'>
                             <div className='flex'>
-                                <FontAwesomeIcon icon={faIdCard} className="w-8 h-8 mr-5 bg-white text-[#245383] rounded-full" />
+                                <FontAwesomeIcon icon={faBook} className="w-8 h-8 mr-6 bg-white text-[#245383] rounded-full" />
                                 <h1 className='text-2xl font-semibold uppercase'>{t("ayuda.glosario")}</h1>
                             </div>
-                            <HelpGlossary />
+                            <div className='ml-20'>
+                                <HelpGlossary />
+                            </div>
                         </div>
                     </div>
                     <div className='col-span-1 flex flex-col justify-between'>

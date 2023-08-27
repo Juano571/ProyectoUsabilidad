@@ -1,3 +1,4 @@
+import Glosario from './Glosario';
 import Indexaciones from './Indexaciones'
 
 const FloatWindow = ({ closeModal }) => {

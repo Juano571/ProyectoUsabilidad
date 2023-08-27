@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
 
-const Glosario = ({ closeModal }) => {
+const Glosario = ({ closeModal}) => {
     const { t } = useTranslation();
 
     return (
@@ -26,15 +26,15 @@ const Glosario = ({ closeModal }) => {
             </div>
             <div>
                 <div className='flex-col text-center items-center justify-center m-5'>
-                    <div className='flex my-4 ml-3'>
-                        <span className='font-semibold mr-2'>{t("bodyGlosario.indexa")}</span>
-                        <p className='w-[100%] text-justify'>{t("bodyGlosario.defIndexa")}</p>
+                    <div className='my-4 ml-3'>
+                        <summary className='text-lg text-left font-medium'>{t("bodyGlosario.indexa")}</summary>
+                        <p className='justify-start text-justify  my-3'>{t("bodyGlosario.defIndexa")}</p>
                     </div>
                 </div>
 
                 <div className='flex-col text-center items-center justify-center m-5'>
                     <div className='flex my-4 ml-3'>
-                        <h3 className='font-semibold mr-2'>{t("bodyGlosario.tipos")}</h3>
+                        <summary className='font-semibold text-lg mr-2'>{t("bodyGlosario.tipos")}</summary>
                     </div>
                     <div className='flex my-4 ml-3'>
                         <span className='font-semibold mr-2 w-auto'>{t("bodyGlosario.definitiva")}</span>
