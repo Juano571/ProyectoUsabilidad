@@ -122,7 +122,9 @@
         "cedulaDeudor": "Ñuqa ñawinmi kikinpa ñawi:",
         "IdNUT": "Rikhunaqa kachkaninku (NUT)",
         "ejemplo": "uya",
-        "obligatorio": "Kaypi riqsichinaqa kamachiqpi"
+        "obligatorio": "Kaypi riqsichinaqa kamachiqpi",
+        "ingrese": "Yaykukani",
+        "criBusqueda": "Riqsichina qillqa wakanaininkiai"
     },
 
     "mainBody": {
