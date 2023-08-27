@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const TableIndexaciones = () => {
+    const {t} = useTranslation();
+
     return (
         <div>
             <table className="table-auto">
