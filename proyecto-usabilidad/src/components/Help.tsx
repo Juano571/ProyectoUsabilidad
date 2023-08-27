@@ -47,9 +47,7 @@ const Help = () => {
                                 <FontAwesomeIcon icon={faIdCard} className="w-8 h-8 mr-5 bg-white text-[#245383] rounded-full" />
                                 <h1 className='text-2xl font-semibold uppercase'>Glosario de criterios de búsqueda</h1>
                             </div>
-                            <div className='flex my-4'>
-                                <HelpGlossary />
-                            </div>
+                            <HelpGlossary />
                         </div>
                     </div>
                     <div className='col-span-1 flex flex-col justify-between'>

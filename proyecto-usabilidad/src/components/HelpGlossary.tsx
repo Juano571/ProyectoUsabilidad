@@ -4,43 +4,33 @@ import { useTranslation } from 'react-i18next';
 const HelpGlossary = () => {
     const {t} = useTranslation();
     return (
-        <div>
-            <div>{t("ayuda.titulo")}</div>
-            <div>
-                
-                    <h3>{t("ayuda.glosario")}</h3>
-                
-                <div>
-                    <img src="" alt="Imagen de un diccionario" />
-                </div>
-                <div>
-                    <details>
-                        <summary>{t("ayuda.glosarioCedulaRepresentante")}</summary>
-                        <p>{t("ayuda.glosarioCedulaRepresentantetxt")}</p>
+            <div className='flex-col text-left my-4'>
+                    <details className='m-3'>
+                        <summary className='text-lg'>{t("ayuda.glosarioCedulaRepresentante")}</summary>
+                        <p className='justify-start text-left p-[1%]'>{t("ayuda.glosarioCedulaRepresentantetxt")}</p>
                     </details>
-                    <details>
-                        <summary >{t("ayuda.glosarioCedulaDeudor")}</summary>
-                        <p>{t("ayuda.glosarioCedulaDeudortxt")}</p>
+                    <details className='m-3'>
+                        <summary className='text-lg'>{t("ayuda.glosarioCedulaDeudor")}</summary>
+                        <p className='justify-start text-left p-[1%]'>{t("ayuda.glosarioCedulaDeudortxt")}</p>
                     </details>
-                    <details>
-                        <summary >{t("ayuda.glosarioCódigoTarjeta")} </summary>
-                        <p>{t("ayuda.glosarioCódigoTarjetatxt")}</p>
+                    <details className='m-3'>
+                        <summary className='text-lg'>{t("ayuda.glosarioCódigoTarjeta")} </summary>
+                        <p className='justify-start text-left p-[1%]'>{t("ayuda.glosarioCódigoTarjetatxt")}</p>
                     </details>
-                    <details>
-                        <summary >{t("ayuda.glosarioCodigoImbabura")}</summary>
-                        <p>{t("ayuda.glosarioCodigoImbaburatxt")}</p>
+                    <details className='m-3'>
+                        <summary className='text-lg'>{t("ayuda.glosarioCodigoImbabura")}</summary>
+                        <p className='justify-start text-left p-[1%]'>{t("ayuda.glosarioCodigoImbaburatxt")}</p>
                     </details>
-                    <details>
-                        <summary>{t("ayuda.glosarioNumero")}</summary>
-                        <p>{t("ayuda.glosarioNumerotxt")}</p>
+                    <details className='m-3'>
+                        <summary className='text-lg'>{t("ayuda.glosarioNumero")}</summary>
+                        <p className='justify-start text-left p-[1%]'>{t("ayuda.glosarioNumerotxt")}</p>
                     </details>
-                    <details>
-                        <summary>{t("ayuda.glosarioIdentificador")}</summary>
-                        <p>{t("ayuda.glosarioIdentificadortxt")}</p>
+                    <details className='m-3'>
+                        <summary className='text-lg'>{t("ayuda.glosarioIdentificador")}</summary>
+                        <p className='justify-start text-left p-[1%]'>{t("ayuda.glosarioIdentificadortxt")}</p>
                     </details>
-                </div>
-            </div>
-        </div>
+            </div>            
+
     )
 }
 
