@@ -121,7 +121,9 @@
         "codigoImbabura": "Código anterior Imbabura:",
         "cedulaRepresentante": "Número de Identificación:",
         "cedulaDeudor": "Número de Identificación:",
-        "IdNUT": "Identificador de aprobación (NUT)"
+        "IdNUT": "Identificador de aprobación (NUT)",
+        "ejemplo":"ejemplo",
+        "obligatorio": "Este campo es obligatorio"
     },
 
     "mainBody": {
