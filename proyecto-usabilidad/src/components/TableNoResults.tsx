@@ -1,19 +1,21 @@
 import React from 'react'
 import TableInformacionGeneral from './TableInformacionGeneral'
 import ComboBoxLanguages from './ComboBoxLanguages'
+import { useTranslation } from 'react-i18next';
 
 const TableNoResults = () => {
+    const {t} = useTranslation();
     return (
         <div>
         <table>
             <thead>
                 <tr className="bg-[#245383] text-white">
-                    <th>Resultado no encontrado</th>
+                    <th>{t("tablaResultadoNoEncontrado.titulo1")}</th>
                 </tr>
             </thead>
             <tbody>
                 <tr className="border px-4 py-2">
-                    <td>El número de cédula 1723427348. perteneciente a Juan Sebastián Posso Carrasquilla, no cuenta con juicios de pensiones alimenticias registrados.</td>
+                    <td>{t("tablaResultadoNoEncontrado.contenido")}</td>
                 </tr>
             </tbody>
         </table>
