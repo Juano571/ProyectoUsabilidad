@@ -5,6 +5,7 @@ import Banner from './Banner'
 import TableSearchResults from './TableSearchResults';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from "react-i18next";
 
 
 const BodyLandingPage = () => {
@@ -48,6 +49,16 @@ const BodyLandingPage = () => {
         setIsParagraphVisible(true); // Cambiar la visibilidad del párrafo
     };
 
+    //Lenguaje Selector
+    const { t, i18n } = useTranslation();
+    const [isLanguageSelectorOpen, setLanguageSelectorOpen] = useState(false);
+
+    const onClickLanguageChange = (e: any) => {
+        const language = e.target.value;
+        i18n.changeLanguage(language); //change the language
+        setLanguageSelectorOpen(false);
+    }
+
     return (
         <body className='flex flex-col h-screen'>
             <Banner></Banner>
@@ -62,7 +73,7 @@ const BodyLandingPage = () => {
                                     <label className='text-lg font-medium w-80' tabIndex={4}>Criterio de Búsqueda:</label>
                                     <div>
                                         <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' tabIndex={5}>
-                                            <option value='df' hidden>Seleccione un Criterio</option>
+                                            <option value='df' hidden>Seleccione un criterio</option>
                                             <option value="cedula">Número de cédula</option>
                                             <option value="codigo_tarjeta">Código de tarjeta</option>
                                             <option value="proceso_judicial">Número de proceso judicial</option>
@@ -74,9 +85,10 @@ const BodyLandingPage = () => {
                                     </div>
                                 </div>
                                 <div className='my-5 flex flex-col sm:flex-row sm:items-center'>
-                                    {selectedOption && <label className=' sm:text-lg font-medium sm:w-80 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}:</label>}
+                                    {selectedOption && <label className=' sm:text-lg font-medium sm:w-80 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
                                         <input type="text"
+                                            required 
                                             pattern="\d*"
                                             inputMode="numeric"
                                             value={value}
@@ -84,7 +96,7 @@ const BodyLandingPage = () => {
                                             placeholder={selectedOption}
                                             className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
-                                            required />
+                                        />
                                     </div>
                                     <div className='pl-4'>
                                         <button onClick={handleSearchClick}
@@ -100,12 +112,30 @@ const BodyLandingPage = () => {
                         {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
                     </div>
                     <div className='col-span-1 flex flex-col justify-between'>
-                        <div>
-                            <FontAwesomeIcon icon={faGlobe} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                        <div className="relative inline-block">
+                            <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}>
+                                <FontAwesomeIcon
+                                    icon={faGlobe}
+                                    className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
+                                />
+                            </div>
+                            {isLanguageSelectorOpen && (
+                                <div
+                                    className="absolute bottom-[-2.5rem] right-2 z-10"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange}>
+                                            <option value='df' hidden>Seleccionar el idioma</option>
+                                            <option value="es" >Spanish</option>
+                                            <option value="qu" >Quechua</option>
+                                            <option value="sh" >Shuar</option>
+                                    </select>
+                                </div>
+                            )}
                         </div>
                         <div >
                             <a href="https://markdown.es/sintaxis-markdown/#imagenes" target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
-                            
+
                         </div>
                     </div>
                 </div>
