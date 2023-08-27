@@ -38,7 +38,7 @@ const TableSearchResults = () => {
                             <div>{t("tablaResultadoEncontrado.titulo5txt1")} OLIMPIA ESMERALDA QUIROZ CARRERA</div>
                             <div>{t("tablaResultadoEncontrado.titulo5txt2")} JORGE ENRIQUE REVELO ROSERO</div>
                         </td>
-                        <td className="px-4 py-2"><button onClick={openModal} className="bg-blue-500 text-white px-4 py-2 rounded">Revisar</button></td>
+                        <td className="px-4 py-2"><button onClick={openModal} className="bg-blue-500 text-white px-4 py-2 rounded">{t("tablaResultadoEncontrado.titulo6txtBtn")}</button></td>
                     </tr>
                 </tbody>
             </table>
