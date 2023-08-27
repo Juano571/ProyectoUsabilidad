@@ -6,7 +6,7 @@
 
    "comboBox": {
         "codigoTarjeta": "Numa shawi tayana",
-        "numero": "Número de proceso judicial",
+        "numero": "Numa wakanaininkiai shunka nanki",
         "codigoImbabura": "Shúang yákian pachama Imbabura",
         "cedulaRepresentante": "Tsintsan kúts yámuk wakanaininkiai",
         "cedulaDeudor": "Tsintsan wakanaininkiai tuatskainkiai",
@@ -123,7 +123,9 @@
 		"cedulaDeudor": "Numa tsintsan wakanaininkiai:",
 		"IdNUT": "Wats kúts yáka aatsainkiai (NUT)",
         "ejemplo": "tsankiai",
-        "obligatorio": "Kuka mukaninaqa kamachiq shunka"
+        "obligatorio": "Kuka mukaninaqa kamachiq shunka",
+        "ingrese": "Yankukani",
+        "criBusqueda": "Kútska riqsichina wakanaininkiai"
 	},
 
 	"mainBody": {
