@@ -13,15 +13,16 @@ const BodyLandingPage = () => {
     const [showResult, setShowResult] = useState<boolean>(false);
     const [verifyShowResult, setVerifyShowResults] = useState<boolean>(false);
     const [selectedOption, setSelectedOption] = useState<string>('');
+    const [selectedValue, setSelectedValue] = useState<string>('');
     const [isParagraphVisible, setIsParagraphVisible] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState('');
-    
+
 
 
     const handleSearchClick = (event: React.FormEvent) => {
         event.preventDefault();
         setVerifyShowResults(true);
-        
+
         if (value === '1710087683') {
             setShowResult(true); // Mostrar el resultado
         } else if (value == '') {
@@ -48,6 +49,10 @@ const BodyLandingPage = () => {
         const selectedText = event.target.selectedOptions[0].text; // Obtener el texto seleccionado del combobox
         setSelectedOption(selectedText);
         handleToggleParagraph();
+
+        const selectedValue = event.target.value;
+        setSelectedValue(selectedValue);
+        setIsParagraphVisible(true);
     };
 
     const handleToggleParagraph = () => {
@@ -62,7 +67,50 @@ const BodyLandingPage = () => {
         const language = e.target.value;
         i18n.changeLanguage(language); //change the language
         setLanguageSelectorOpen(false);
+
     }
+
+    //Ejemplos
+    const renderExample = () => {
+        switch (selectedValue) {
+            case 'representante_legal':
+                return '1789456123';
+            case 'deudor_principal':
+                return '1789456321';
+            case 'codigo_tarjeta':
+                return '0101-1234';
+            case 'proceso_judicial':
+                return '01204-2015-1234';
+            case 'codigo_imbabura':
+                return 'A123, 10950, OTA020A';
+            case 'identificador_aprobacion':
+                return 'A00023';
+            default:
+                return '';
+        }
+    };
+
+    //Traducir combobox
+    const inputValue = () => {
+        switch (selectedValue) {
+            case 'df':
+                return t("comboBox.seleccionarCriterio");
+            case 'representante_legal':
+                return t("comboBox.cedulaRepresentante");
+            case 'deudor_principal':
+                return t("comboBox.cedulaDeudor");
+            case 'codigo_tarjeta':
+                return t("comboBox.codigoTarjeta");
+            case 'proceso_judicial':
+                return t("comboBox.numero");
+            case 'codigo_imbabura':
+                return t("comboBox.codigoImbabura");
+            case 'identificador_aprobacion':
+                return t("comboBox.identificador");
+            default:
+                return '';
+        }
+    };
 
     return (
         <body className='flex flex-col h-screen'>
@@ -75,45 +123,49 @@ const BodyLandingPage = () => {
                         <div className='flex py-10'>
                             <form>
                                 <div className='flex'>
-                                    <label className='text-lg font-medium w-96' tabIndex={4}>Criterio de Búsqueda:</label>
+                                    <label className='pt-1 text-lg font-medium w-96' tabIndex={4}>{t("mainBody.criterio")}:</label>
                                     <div>
-                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' tabIndex={5}>
+                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' tabIndex={5}>
                                             <option value='df' hidden>{t("comboBox.seleccionarCriterio")}</option>
+                                            <option value="representante_legal">{t("comboBox.cedulaRepresentante")}</option>
+                                            <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
                                             <option value="codigo_tarjeta">{t("comboBox.codigoTarjeta")}</option>
                                             <option value="proceso_judicial">{t("comboBox.numero")}</option>
                                             <option value="codigo_imbabura">{t("comboBox.codigoImbabura")}</option>
-                                            <option value="representante_legal">{t("comboBox.cedulaRepresentante")}</option>
-                                            <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
                                             <option value="identificador_aprobacion">{t("comboBox.identificador")}</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div className='my-5 flex flex-col sm:flex-row sm:items-center'>
-                                    {selectedOption && <label className='sm:text-lg font-medium sm:w-96 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}*:</label>}
+                                <div className='mt-5 flex sm:flex-row sm:items-center'>
+                                    {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>Ingrese {inputValue()}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
                                         <input type="text"
-                                            required 
+                                            required
                                             pattern="\d*"
                                             inputMode="numeric"
                                             value={value}
                                             onChange={handleInputChange}
-                                            placeholder={selectedOption}
+                                            placeholder={inputValue()}
                                             className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                         />
+                                        <div className='text-gray-400 mt-3' style={{ display: isParagraphVisible ? 'block' : 'none' }}>
+                                            <span className='capitalize ml-5 text-lg'>{t("labelComboBox.ejemplo")}: </span>
+                                            <span>{renderExample()}</span>
+                                        </div>
                                     </div>
-                                    <div className='pl-4'>
+                                    <div className='pl-4 pb-9'>
                                         <button onClick={handleSearchClick}
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
-                                            className='w-full sm:w-32 sm:mt-0 rounded-3xl py-2 border bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
-                                        >Buscar
+                                            className='w-full sm:w-32 sm:mt-0 rounded-3xl py-2 bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
+                                        >{t("mainBody.btnBuscar")}
                                         </button>
                                     </div>
                                 </div>
-                                {errorMessage && <p className="text-red-500 mt-1">{errorMessage}</p>}
+                                {errorMessage && <p className="text-red-500 ml-56 text-center mt-2">{errorMessage}</p>}
                             </form>
                         </div>
-                        
+
                         {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
                     </div>
                     <div className='col-span-1 flex flex-col justify-between'>
@@ -130,10 +182,10 @@ const BodyLandingPage = () => {
                                     onClick={(e) => e.stopPropagation()}
                                 >
                                     <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange}>
-                                            <option value='df' hidden>{t("ayuda.idiomaSelec")}</option>
-                                            <option value="es" >Español</option>
-                                            <option value="qu" >Quechua</option>
-                                            <option value="sh" >Shuar</option>
+                                        <option value='df' hidden>{t("ayuda.idiomaSelec")}</option>
+                                        <option value="es" >Español</option>
+                                        <option value="qu" >Quechua</option>
+                                        <option value="sh" >Shuar</option>
                                     </select>
                                 </div>
                             )}
