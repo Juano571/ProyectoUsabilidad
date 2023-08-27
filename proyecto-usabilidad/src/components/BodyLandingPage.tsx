@@ -85,7 +85,7 @@ const BodyLandingPage = () => {
                                     </div>
                                 </div>
                                 <div className='my-5 flex flex-col sm:flex-row sm:items-center'>
-                                    {selectedOption && <label className=' sm:text-lg font-medium sm:w-80 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}:</label>}
+                                    {selectedOption && <label className=' sm:text-lg font-medium sm:w-80 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
                                         <input type="text"
                                             required 
