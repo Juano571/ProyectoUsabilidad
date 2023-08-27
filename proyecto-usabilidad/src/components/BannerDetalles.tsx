@@ -17,7 +17,7 @@ const BannerDetalles = ({closeModal}) => {
 
 
     return (
-        <div className='rounded-t-xl'>
+        <div className='rounded-t-xl overflow-y-auto h-screen'>
             <div className='min-w-max bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover rounded-t-xl'>
             <div className='w-full flex-col items-center justify-around'>
                 <div className='flex justify-between mx-8 py-4'>

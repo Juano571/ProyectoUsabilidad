@@ -9,10 +9,11 @@ const MovimientosPendientes = () => {
 
         <div>
             {/*<BannerDetalles closeModal={closeModal}/>*/}
-            <div className='relative flex justify-center top-14'>
+            <div className='relative flex justify-center top-5'>
                 <TableMovimientosPendientes />
             </div>
-            <div className='relative w-2/3 grid place-items-center grid-cols-4 p-3 top-24 rounded-xl bg-gray-300 text-sm mr-72 ml-72'>
+            {
+             <div className='relative w-2/3 grid place-items-center grid-cols-4 p-3 top-10 rounded-xl bg-gray-300 text-sm  mx-auto'>
                 <div className='font-bold text-left'>
                     <ul>
                         <li className='p-2'>
@@ -72,6 +73,8 @@ const MovimientosPendientes = () => {
                     </ul>
                 </div>
             </div>
+        }
+           
 
         </div>
 
