@@ -73,8 +73,7 @@ const MovimientosPendientes = () => {
                     </ul>
                 </div>
             </div>
-        }
-           
+        }    
 
         </div>
 
