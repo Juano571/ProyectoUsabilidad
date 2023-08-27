@@ -166,7 +166,7 @@ const BodyLandingPage = () => {
 
                         {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
                     </div>
-                    <div className='col-span-1 flex flex-col justify-between'>
+                    <div className='col-span-1 flex flex-col justify-between mr-8'>
                         <div className="relative inline-block">
                             <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}>
                                 <FontAwesomeIcon

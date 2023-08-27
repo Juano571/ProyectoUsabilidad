@@ -4,59 +4,78 @@ import TableInformacionGeneral from './TableInformacionGeneral'
 import { useTranslation } from 'react-i18next';
 
 const InformacionGeneral = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <>
-        {/*<BannerDetalles closeModal={closeModal}/>*/}
+            {/*<BannerDetalles closeModal={closeModal}/>*/}
             <div className='flex justify-center'>
-                <div className='relative top-1 p-5'>
-                    <ul>
-                        <li className='text-white bg-[#245383] w-64 text-left font-semibold rounded-xl p-1 pl-3 m-2'>
-                            {t("tablaResultadoEncontrado.titulo5")}
-                        </li>
-                        <li className='font-semibold m-2'>
-                            {t("tablaResultadoEncontrado.titulo5txt1")}
-                        </li>
-                        <li className='bg-[#fcfcfc] w-64 text-left rounded-xl p-1 pl-3 text-xs m-2'>
-                            MARIA CONCEPCIÓN REASCOS FIALLOS
-                        </li>
-                        <li className='font-semibold'>
-                            {t("infoGeneral.obligado")}
-                        </li >
-                        <li className='bg-[#fcfcfc] w-64 text-left rounded-xl p-1 pl-3 text-xs m-2'>
-                            MATEO SEBASTIAN GARCES ZAMBRANO
-                        </li>
-                        <li className='text-white bg-[#245383] w-64 text-left font-semibold rounded-xl p-1 pl-3 m-2'>
+                <div className='relative m-5'>
+                    <div className='w-72 text-justify mb-3'>
+                        <div className='text-white bg-[#245383] font-semibold rounded-3xl px-8 py-2 uppercase'>
+                            {t("tablaResultadoEncontrado.titulo5")}:
+                        </div>
+                        <div className='mx-5 py-2'>
+                            <div>
+                                <summary className='font-semibold m-2'>
+                                    {t("tablaResultadoEncontrado.titulo5txt1")}
+                                </summary>
+                                <p className='ml-2'>
+                                    María Concepción Reascos Fiallos
+                                </p>
+                            </div>
+                            <div>
+                                <summary className='font-semibold m-2'>
+                                    {t("infoGeneral.obligado")}
+                                </summary>
+                                <p className='ml-2'>
+                                    Mateo Sebastián Garces Zambrano
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='w-72 text-justify mb-3'>
+                        <div className='text-white bg-[#245383] font-semibold rounded-3xl px-8 py-2 uppercase'>
                             {t("infoGeneral.infotitulo")}
-                        </li>
-                        <li className='font-semibold m-2'>
-                            {t("infoGeneral.numTarjeta")}
-                        </li>
-                        <li className='bg-[#fcfcfc] w-64 text-left rounded-xl p-1 pl-3 text-xs m-2'>
-                            2201-636
-                        </li>
-                        <li className='font-semibold m-2'>
-                            {t("infoGeneral.provincia")}
-                        </li>
-                        <li className='bg-[#fcfcfc] w-64 text-left rounded-xl p-1 pl-3 text-xs m-2'>
-                            PICHINCHA / QUITO
-                        </li>
-                        <li className='font-semibold m-2'>
-                            {t("infoGeneral.tipoDepension")}
-                        </li>
-                        <li className='bg-[#fcfcfc] w-64 text-left rounded-xl p-1 pl-3 text-xs m-2'>
-                            {t("infoGeneral.tipopen")}
-                        </li>
-                        <li className='font-semibold'>
-                            {t("infoGeneral.pensactual")}
-                        </li>
-                        <li className='bg-[#fcfcfc] w-64 text-left rounded-xl p-1 pl-3 text-xs m-2'>
-                            $577.89
-                        </li>
-                    </ul>
+                        </div>
+                        <div className='mx-5 py-2'>
+                            <div>
+                                <summary className='font-semibold m-2'>
+                                    {t("infoGeneral.numTarjeta")}
+                                </summary>
+                                <p className='ml-2'>
+                                    2201-636
+                                </p>
+                            </div>
+                            <div>
+                                <summary className='font-semibold m-2'>
+                                    {t("infoGeneral.provincia")}
+                                </summary>
+                                <p className='ml-2'>
+                                    Pichincha / Quito
+                                </p>
+                            </div>
+                            <div>
+                                <summary className='font-semibold m-2'>
+                                    {t("infoGeneral.tipoDepension")}
+                                </summary>
+                                <p className='ml-2'>
+                                    {t("infoGeneral.tipopen")}
+                                </p>
+                            </div>
+                            <div>
+                                <summary className='font-semibold m-2'>
+                                    {t("infoGeneral.pensactual")}
+                                </summary>
+                                <p className='ml-2'>
+                                    $577.89
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div >
-                <div className='relative mt-5'>
-                    <TableInformacionGeneral/>
+                <div className="border-l border-spacing-4 h-auto my-5"></div>
+                <div className='flex items-start m-5'>
+                    <TableInformacionGeneral />
                 </div>
             </div>
         </>
