@@ -14,15 +14,19 @@ const BodyLandingPage = () => {
     const [verifyShowResult, setVerifyShowResults] = useState<boolean>(false);
     const [selectedOption, setSelectedOption] = useState<string>('');
     const [isParagraphVisible, setIsParagraphVisible] = useState<boolean>(false);
+    const [errorMessage, setErrorMessage] = useState('');
+    
 
 
     const handleSearchClick = (event: React.FormEvent) => {
         event.preventDefault();
         setVerifyShowResults(true);
+        
         if (value === '1710087683') {
             setShowResult(true); // Mostrar el resultado
         } else if (value == '') {
             setVerifyShowResults(false);
+            setErrorMessage('Este campo es obligatorio');
         } else if (value === '1723427348') {
             setShowResult(false);
         } else {
@@ -30,9 +34,10 @@ const BodyLandingPage = () => {
         }
     };
 
+
+
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const inputValue = event.target.value;
-
         // Validar que sea un número y no supere 10 dígitos
         if (/^\d*$/.test(inputValue) && inputValue.length <= 10) {
             setValue(inputValue);
@@ -105,9 +110,10 @@ const BodyLandingPage = () => {
                                         </button>
                                     </div>
                                 </div>
-
+                                {errorMessage && <p className="text-red-500 mt-1">{errorMessage}</p>}
                             </form>
                         </div>
+                        
                         {verifyShowResult ? (showResult ? <TableSearchResults /> : <TableNoResults />) : <div></div>}
                     </div>
                     <div className='col-span-1 flex flex-col justify-between'>
