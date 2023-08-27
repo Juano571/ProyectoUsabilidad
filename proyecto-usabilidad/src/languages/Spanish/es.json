@@ -50,6 +50,12 @@
         "titulo5txt2": "Obligado principal",
         "titulo6txtBtn": "Revisar"
     },
+
+    "tablaResultadoNoEncontrado": {
+        "titulo1": "Resultado no encontrado",
+        "contenido": "No existen resultados de pensiones alimenticias para el dato ingresado"
+    },
+
     "tablaInformacionGeneral": {
         "titulo1": "No",
         "titulo2": "Fecha de deuda",
