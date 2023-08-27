@@ -62,30 +62,29 @@ const BodyLandingPage = () => {
     return (
         <body className='flex flex-col h-screen'>
             <Banner></Banner>
-            <div className='py-8 pl-8 flex-grow justify-around'>
+            <div className='py-8 pl-10 flex-grow justify-around'>
                 <div className='flex'
                     style={{ minHeight: '100%' }}>
                     <div className='flex-col w-11/12 mr-[4%]'>
-                        <h1 className='text-3xl text-[#245383] font-medium uppercase' tabIndex={3}>Consulta de Tarjetas de Pensión Alimentaria</h1>
+                        <h1 className='text-3xl text-[#245383] font-medium uppercase' tabIndex={3}>{t("header.tituloAlimentaria")}</h1>
                         <div className='flex py-10'>
                             <form>
                                 <div className='flex'>
-                                    <label className='text-lg font-medium w-80' tabIndex={4}>Criterio de Búsqueda:</label>
+                                    <label className='text-lg font-medium w-96' tabIndex={4}>Criterio de Búsqueda:</label>
                                     <div>
                                         <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' tabIndex={5}>
-                                            <option value='df' hidden>Seleccione un criterio</option>
-                                            <option value="cedula">Número de cédula</option>
-                                            <option value="codigo_tarjeta">Código de tarjeta</option>
-                                            <option value="proceso_judicial">Número de proceso judicial</option>
-                                            <option value="codigo_imbabura">Código Anterior Imbabura</option>
-                                            <option value="representante_legal">Cédula representante legal</option>
-                                            <option value="deudor_principal">Cédula deudor principal</option>
-                                            <option value="identificador_aprobacion">Identificador de aprobación</option>
+                                            <option value='df' hidden>{t("comboBox.seleccionarCriterio")}</option>
+                                            <option value="codigo_tarjeta">{t("comboBox.codigoTarjeta")}</option>
+                                            <option value="proceso_judicial">{t("comboBox.numero")}</option>
+                                            <option value="codigo_imbabura">{t("comboBox.codigoImbabura")}</option>
+                                            <option value="representante_legal">{t("comboBox.cedulaRepresentante")}l</option>
+                                            <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
+                                            <option value="identificador_aprobacion">{t("comboBox.identificador")}</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div className='my-5 flex flex-col sm:flex-row sm:items-center'>
-                                    {selectedOption && <label className=' sm:text-lg font-medium sm:w-80 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}*:</label>}
+                                    {selectedOption && <label className='sm:text-lg font-medium sm:w-96 mb-2 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
                                         <input type="text"
                                             required 

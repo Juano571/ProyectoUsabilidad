@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation();
 
     // const [dataEs, setDataEs] = useState([])
 
@@ -22,9 +24,7 @@ const Footer: React.FC = () => {
         <footer className="h-fit px-8 py-4  flex justify-between text-white bg-[#245383] bg-cover bg-[url('/images/shiny-overlay.svg')]">
             <div className='flex items-center justify-around'>
                 <div className='text-xl'>
-                    <p>
-                        Construyendo un servicio de justicia para la paz social
-                    </p>
+                    <p>{t("footer.slogan")}</p>
                 </div>
             </div>
 

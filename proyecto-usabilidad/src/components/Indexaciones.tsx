@@ -8,7 +8,7 @@ const Indexaciones = ({ closeModal}) => {
         <div>
             <BannerDetalles closeModal={closeModal}/>
             <div className='relative ml-64 mt-16'>
-                <Glosario />
+                <Glosario closeModal={closeModal}/>
             </div>
             <div className='relative top-14 ml-10 mt-12'>
                 {/* <TableIndexaciones/> */}
