@@ -1,119 +1,130 @@
 {
-    "Header": {
+	"header": {
         "titulo": "Jat taiwiam wampuininkiai shuakanaininkiai taim jipi pankiawanka",
-		"TituloAlimentaria" : "Kampankintsa wampuna wampuna wampuna piwankintska penshún awa"
+        "tituloAlimentaria": "Kampankintsa wampuna wampuna wampuna piwankintska penshún awa"
     },
-    "ComboBox": {
-        "CódigoTarjeta": "Numa shawi tayana",
-        "Numero": "Número de proceso judicial",
-        "CodigoImbabura": "Shúang yákian pachama Imbabura",
-		"CedulaRepresentante": "Tsintsan kúts yámuk wakanaininkiai",
-		"CedulaDeudor": "Tsintsan wakanaininkiai tuatskainkiai",
-		"Identificador": "Wats kúts yáka aatsainkiai"
+
+   "comboBox": {
+        "codigoTarjeta": "Numa shawi tayana",
+        "numero": "Número de proceso judicial",
+        "codigoImbabura": "Shúang yákian pachama Imbabura",
+        "cedulaRepresentante": "Tsintsan kúts yámuk wakanaininkiai",
+        "cedulaDeudor": "Tsintsan wakanaininkiai tuatskainkiai",
+        "identificador": "Wats kúts yáka aatsainkiai"
     },
-    "Ayuda": {
-		"Titulo": "Nantu",
-		"Servicio": "Waini",
-		"GuiaUso": "Shiu waini",
-		"Glosario": "Kunkuak shiá",
-		"Serviciotxt": "Nunkui shípi, kúts tsintsan wakanaininkiai waini kámap, kúts tsintsan yámuk wakanaininkiai kútska kúmuk waini tsukutai.",
-		"GuiaUsotxt": "Tsantsankui kuash wakanaininkiai kúmpa, kúts intiuk kámap atunkukai kúts tsintsan waini tsukutai.",
-		"GlosarioCódigoTarjeta": "Numa shawi tayana",
-		"GlosarioNumero": "Numa shawi jipinana shiá",
-		"GlosarioCodigoImbabura": "Shúang yákian pachama Imbabura",
-		"GlosarioCedulaRepresentante": "Tsintsan kúts yámuk wakanaininkiai",
-		"GlosarioCedulaDeudor": "Tsintsan wakanaininkiai tuatskainkiai",
-		"GlosarioIdentificador": "Wats kúts yáka aatsainkiai",
-		"GlosarioCódigoTarjetatxt": "Numa tsinkiai tsanuk wakanaininkiai kúmuk tayana shúang. Kúts wakanaininkiai nanki wakanaininkiai, nukui tsukutai tayana wakanaininkiai pútsa kútska waini tsukutai.",
-		"GlosarioNumerotxt": "Numa tsinkiai wakanaininkiai kúmuk jipinana wakanaininkiai tuatskainkiai tsanukpú wakanaininkiai kúts tsintsan kámap tsukutai. Kúts wakanaininkiai nanki wakanaininkiai, tsúka kútska wakanaininkiai tsanuk kámap tsukutai nanki wakanaininkiai kútska waini tsukutai.",
-		"GlosarioCodigoImbaburatxt": "Numa pútsa shúang, tsanuk yákian pachama Imbabura, yankut kútskai patsainkiai kúts tsintsan wakanaininkiai kútska waini tsukutai. Kútskananki yatsunai, shúang tsunuk wakanaininkiai kúts tsintsan waini tsukutai.",
-		"GlosarioCedulaRepresentantetxt": "Tsintsan kúts kútska yámuk wakanaininkiai tsanuk wakanaininkiai tsukutai. Tsúka kúts wakanaininkiai kútska kúmuk tsankiai wakanaininkiai tsukutai, pútsa kútska wakanaininkiai waini tsukutai.",
-		"GlosarioCedulaDeudortxt": "Tsintsan tsankiai kúts wakanaininkiai tsanuk wakanaininkiai tsukutai. Kúts tsanuk wakanaininkiai tsankiai, tsúka kútska wakanaininkiai tsanuk kámap tsukutai nanki wakanaininkiai waini tsukutai.",
-		"GlosarioIdentificadortxt": "Numa kúts pútsa shúang, nukui tsankiai kúts wakanaininkiai tsanuk kámap tsukutai. Kúts tsankiai, kútska tsanuk kámap wakanaininkiai, yatsunai kútska tsanuk wakanaininkiai kútska waini tsukutai."
-	},
-	"TablaResultadoEncontrado": {
-		"Titulo1": "Numa shawi tayana",
-		"Titulo2": "Numa shawi jipinana shiá",
-		"Titulo3": "Kúts tsintsan wakanaininkiai tsúka pútsa",
-		"Titulo4": "Kúts tsankiai kámap",
-		"Titulo5": "Tsankiai kútska tsúka",
-		"Titulo6": "Nupai",
-		"Titulo3txt1": "Waini tsúka Tsankiai kútska Tsúka Nanki yankut wakanaininkiai nanki wakanaininkiai nanki tsankiai tsankiai wakanaininkiai, kútska Tsúka, kútska Tsankiai, kútska Kámap, kútska Nanki wakanaininkiai kútska Waini tsukutai, tsankiai tsankiai Pichincha kútska Pichincha",
-		"Titululo4txt1": "Kúts tsankiai shiá",
-		"Titulo5txt1": "Tsankiai kútska Kútska",
-		"Titulo5txt2": "Tsankiai kútska Tuatska",
-		"Titulo6txtBtn": "Kútska"
-	},
-    "TablaInformacionGeneral": {
-		"Titulo1": "Num",
-		"Titulo2": "Tsúka wakanaininkiai",
-		"Titulo3": "Nukui",
-		"Titulo4": "Kútska",
-		"Titulo5": "Kúts tsankiai wakanaininkiai",
-		"Titulo6": "Kúts tsankiai tsankiai",
-		"Titulo7": "Nukui tsankiai",
-		"Titulo3txt1": "Kúts tsankiai shiá",
-		"Titulo3txt2": "Kúts tsankiai",
-		"Titulo3txt3": "Kúts tsankiai tsukutai",
-		"Titulo4txt1": "Shúang waini",
-		"Titulo4txt2": "Tsankiai",
-		"Titulo7txt1": "Tsankiai wakanaininkiai",
-		"Titulo7txt2": "Tsankiai"
-	},
-	"TablaMovimientosPendientes": {
-		"Titulo1": "Num",
-		"Titulo2": "Shúang",
-		"Titulo3": "Nukui",
-		"Titulo4": "Nukui",
-		"Titulo5": "Kúts tsankiai wakanaininkiai",
-		"Titulo6": "Kútska",
-		"Titulo7": "Nukui tsankiai",
-		"Titulo4txt1": "Kúts tsankiai shiá",
-		"Titulo4txt2": "Kúts tsankiai",
-		"Titulo4txt3": "Kúts tsankiai tsukutai",
-		"Titulo6txt1": "Shúang waini",
-		"Titulo6txt2": "Tsankiai"
-	},
-	"TablaIndexaciones": {
-		"Titulo1": "Shúnkia",
-		"Titulo2": "Waini shúang kúts wakanaininkiai",
-		"Titulo3": "Tsúka",
-		"Titulo4": "Kútska kúmuk",
-		"Titulo5": "Nukui tsankiai",
-		"Titulo1txt1": "Indexación",
-		"Titulo1txt2": "Kútska",
-		"Titulo1txt3": "Kútska tsúka",
-		"Titulo5txt3": "Indexación 2023",
-		"Titulo5txt2": "Indexación 2018",
-		"Titulo5txt1": "Indexación 2016",
-		"Titulo5txt4": "Kúts tsankiai shiá",
-		"Titulo5txt5": "Kúts tsankiai tsúka"
-	},
-	"Footer": {
+
+	"ayuda": {
+        "titulo": "Nantu",
+        "servicio": "Waini",
+        "guiaUso": "Shiu waini",
+        "glosario": "Kunkuak shiá",
+        "serviciotxt": "Nunkui shípi, kúts tsintsan wakanaininkiai waini kámap, kúts tsintsan yámuk wakanaininkiai kútska kúmuk waini tsukutai.",
+        "guiaUsotxt": "Tsantsankui kuash wakanaininkiai kúmpa, kúts intiuk kámap atunkukai kúts tsintsan waini tsukutai.",
+        "glosarioCódigoTarjeta": "Numa shawi tayana",
+        "glosarioNumero": "Numa shawi jipinana shiá",
+        "glosarioCodigoImbabura": "Shúang yákian pachama Imbabura",
+        "glosarioCedulaRepresentante": "Tsintsan kúts yámuk wakanaininkiai",
+        "glosarioCedulaDeudor": "Tsintsan wakanaininkiai tuatskainkiai",
+        "glosarioIdentificador": "Wats kúts yáka aatsainkiai",
+        "glosarioCódigoTarjetatxt": "Numa tsinkiai tsanuk wakanaininkiai kúmuk tayana shúang. Kúts wakanaininkiai nanki wakanaininkiai, nukui tsukutai tayana wakanaininkiai pútsa kútska waini tsukutai.",
+        "glosarioNumerotxt": "Numa tsinkiai wakanaininkiai kúmuk jipinana wakanaininkiai tuatskainkiai tsanukpú wakanaininkiai kúts tsintsan kámap tsukutai. Kúts wakanaininkiai nanki wakanaininkiai, tsúka kútska wakanaininkiai tsanuk kámap tsukutai nanki wakanaininkiai kútska waini tsukutai.",
+        "glosarioCodigoImbaburatxt": "Numa pútsa shúang, tsanuk yákian pachama Imbabura, yankut kútskai patsainkiai kúts tsintsan wakanaininkiai kútska waini tsukutai. Kútskananki yatsunai, shúang tsunuk wakanaininkiai kúts tsintsan waini tsukutai.",
+        "glosarioCedulaRepresentantetxt": "Tsintsan kúts kútska yámuk wakanaininkiai tsanuk wakanaininkiai tsukutai. Tsúka kúts wakanaininkiai kútska kúmuk tsankiai wakanaininkiai tsukutai, pútsa kútska wakanaininkiai waini tsukutai.",
+        "glosarioCedulaDeudortxt": "Tsintsan tsankiai kúts wakanaininkiai tsanuk wakanaininkiai tsukutai. Kúts tsanuk wakanaininkiai tsankiai, tsúka kútska wakanaininkiai tsanuk kámap tsukutai nanki wakanaininkiai waini tsukutai.",
+        "glosarioIdentificadortxt": "Numa kúts pútsa shúang, nukui tsankiai kúts wakanaininkiai tsanuk kámap tsukutai. Kúts tsankiai, kútska tsanuk kámap wakanaininkiai, yatsunai kútska tsanuk wakanaininkiai kútska waini tsukutai."
+    },
+
+	"tablaResultadoEncontrado": {
+        "titulo1": "Numa shawi tayana",
+        "titulo2": "Numa shawi jipinana shiá",
+        "titulo3": "Kúts tsintsan wakanaininkiai tsúka pútsa",
+        "titulo4": "Kúts tsankiai kámap",
+        "titulo5": "Tsankiai kútska tsúka",
+        "titulo6": "Nupai",
+        "titulo3txt1": "Waini tsúka Tsankiai kútska Tsúka Nanki yankut wakanaininkiai nanki wakanaininkiai nanki tsankiai tsankiai wakanaininkiai, kútska Tsúka, kútska Tsankiai, kútska Kámap, kútska Nanki wakanaininkiai kútska Waini tsukutai, tsankiai tsankiai Pichincha kútska Pichincha",
+        "titululo4txt1": "Kúts tsankiai shiá",
+        "titulo5txt1": "Tsankiai kútska Kútska",
+        "titulo5txt2": "Tsankiai kútska Tuatska",
+        "titulo6txtBtn": "Kútska"
+    },
+
+	"tablaInformacionGeneral": {
+        "titulo1": "Num",
+        "titulo2": "Tsúka wakanaininkiai",
+        "titulo3": "Nukui",
+        "titulo4": "Kútska",
+        "titulo5": "Kúts tsankiai wakanaininkiai",
+        "titulo6": "Kúts tsankiai tsankiai",
+        "titulo7": "Nukui tsankiai",
+        "titulo3txt1": "Kúts tsankiai shiá",
+        "titulo3txt2": "Kúts tsankiai",
+        "titulo3txt3": "Kúts tsankiai tsukutai",
+        "titulo4txt1": "Shúang waini",
+        "titulo4txt2": "Tsankiai",
+        "titulo7txt1": "Tsankiai wakanaininkiai",
+        "titulo7txt2": "Tsankiai"
+    },
+
+    "tablaMovimientosPendientes": {
+        "titulo1": "Num",
+        "titulo2": "Shúang",
+        "titulo3": "Nukui",
+        "titulo4": "Nukui",
+        "titulo5": "Kúts tsankiai wakanaininkiai",
+        "titulo6": "Kútska",
+        "titulo7": "Nukui tsankiai",
+        "titulo4txt1": "Kúts tsankiai shiá",
+        "titulo4txt2": "Kúts tsankiai",
+        "titulo4txt3": "Kúts tsankiai tsukutai",
+        "titulo6txt1": "Shúang waini",
+        "titulo6txt2": "Tsankiai"
+    },
+
+	"tablaIndexaciones": {
+        "titulo1": "Shúnkia",
+        "titulo2": "Waini shúang kúts wakanaininkiai",
+        "titulo3": "Tsúka",
+        "titulo4": "Kútska kúmuk",
+        "titulo5": "Nukui tsankiai",
+        "titulo1txt1": "Indexación",
+        "titulo1txt2": "Kútska",
+        "titulo1txt3": "Kútska tsúka",
+        "titulo5txt3": "Indexación 2023",
+        "titulo5txt2": "Indexación 2018",
+        "titulo5txt1": "Indexación 2016",
+        "titulo5txt4": "Kúts tsankiai shiá",
+        "titulo5txt5": "Kúts tsankiai tsúka"
+    },
+
+	"footer": {
 		"slogan": "Tsankiai shiá waini kútska kúmuk kúts wakanaininkiai tsukutai",
 		"contacto": "KÚNKAUK wakanaininkiai 023953600/023999800 EXT: 25821 escuela.judicial@funcionjudicial.gob.ec"
 	},
-	"LabelComboBox": {
-		"códigoTarjeta": "Numa shawi tayana:",
+
+	"labelComboBox": {
+		"codigoTarjeta": "Numa shawi tayana:",
 		"numero": "Numa shawi jipinana shiá:",
 		"codigoImbabura": "Shúang yákian pachama Imbabura:",
 		"cedulaRepresentante": "Numa tsintsan wakanaininkiai:",
 		"cedulaDeudor": "Numa tsintsan wakanaininkiai:",
 		"IdNUT": "Wats kúts yáka aatsainkiai (NUT)"
 	},
-	"MainBody": {
+
+	"mainBody": {
 		"titulo": "Kúts tsankiai tayana wakanaininkiai",
 		"criterio": "Kútska wakanaininkiai tsukutai",
 		"btnBuscar": "Kútska",
 		"resultadoConsulta": "Kúts tsankiai wakanaininkiai kútska"
 	},
-	"BannerInfoGeneral": {
+
+	"bannerInfoGeneral": {
 		"titulo": "Kútska wakanaininkiai shúang tayana kúts tsankiai",
 		"infogeneral": "Waini tsankiai nanki",
 		"movpendientes": "Tsankiai wakanaininkiai waini kútska",
 		"indexac": "Kútska tsankiai"
 	},
-	"InfoGeneral": {
+
+	"infoGeneral": {
 		"intervi": "Tsankiai kútska",
 		"representante": "Tsankiai kútska yámuk wakanaininkiai:",
 		"obligado": "Tsankiai kútska tuatskainkiai:",
@@ -125,7 +136,8 @@
 		"tipopen": "Kúts tsankiai shiá:",
 		"pensactual": "Kúts tsankiai kámap:"
 	},
-	"FooterTablaMovPendientes": {
+
+	"footerTablaMovPendientes": {
 		"numPensPendiente": "Numa kútska kámap tsankiai:",
 		"subtotalPens": "Kútska tsankiai nanki wakanaininkiai:",
 		"subtotalInter": "Kútska tsankiai nanki wakanaininkiai:",
@@ -133,11 +145,13 @@
 		"totalPendiente": "Tsankiai kútska",
 		"otrasPendiente": "Numa kútska wakanaininkiai tsankiai kútska:"
 	},
-    "BannerGlosario": {
+
+    "bannerGlosario": {
 		"titulo": "GLOSARIO SHUNKIA",
 		"btnCerrar": "Tsankiai"
 	},
-	"BodyGlosario": {
+
+	"bodyGlosario": {
 		"indexa": "Indexación:",
 		"defIndexa": "Shúang waini kúts tsankiai kámap nanki kúts tsankiai shiá, kútska tsúka tsankiai wakanaininkiai nanki wakanaininkiai nanki tsankiai tsankiai kútska tsankiai tsúka nanki wakanaininkiai nanki wakanaininkiai.",
 		"tipos": "Tsankiai kútska indexación:",

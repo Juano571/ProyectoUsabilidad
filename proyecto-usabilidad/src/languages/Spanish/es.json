@@ -1,119 +1,128 @@
 {
-    "Header": {
+    "header": {
         "titulo": "Sistema único de pensiones alimenticias",
-        "TituloAlimentaria" : "Consulta de tarjetas de pensión alimenticia"
+        "tituloAlimentaria" : "Consulta de tarjetas de pensión alimenticia"
     },
-    "ComboBox": {
-        "CódigoTarjeta": "Código de tarjeta",
-        "Numero": "Número de proceso judicial",
-        "CodigoImbabura": "Código anterior Imbabura",
-        "CedulaRepresentante": "Cédula representante legal",
-        "CedulaDeudor": "Cédula del deudor principal",
-        "Identificador": "Identificador de aprobación"
+    "comboBox": {
+        "codigoTarjeta": "Código de tarjeta",
+        "numero": "Número de proceso judicial",
+        "codigoImbabura": "Código anterior Imbabura",
+        "cedulaRepresentante": "Cédula representante legal",
+        "cedulaDeudor": "Cédula del deudor principal",
+        "identificador": "Identificador de aprobación"
     },
-    "Ayuda": {
-        "Titulo": "Ayuda",
-        "Servicio": "Servicio",
-        "GuiaUso": "Guía de uso",
-        "Glosario": "Glosario",
-        "Serviciotxt": "En nuestra plataforma, puedes realizar consultas sobre pensiones alimenticias con el número de identificación del principal obligado al pago o del  representante legal del beneficiario.",
-        "GuiaUsotxt": "Si tienes dudas sobre cómo realizar el proceso de búsqueda, ingresa al video tutorial.",
-        "GlosarioCódigoTarjeta": "Código de tarjeta",
-        "GlosarioNumero": "Número de proceso judicial",
-        "GlosarioCodigoImbabura": "Código anterior Imbabura",
-        "GlosarioCedulaRepresentante": "Cédula representante legal",
-        "GlosarioCedulaDeudor": "Cédula del deudor principal",
-        "GlosarioIdentificador": "Identificador de aprobación",
-        "GlosarioCódigoTarjetatxt": "Un número o código único asignado a una tarjeta específica. En el contexto de pensiones alimenticias, podría referirse a una tarjeta de identificación o tarjeta bancaria asociada a un caso de pensiones alimenticias.",
-        "GlosarioNumerotxt": "Un número único asignado a un caso legal que está siendo procesado en un tribunal. En el contexto de pensiones alimenticias, se utiliza para identificar de manera única el caso judicial relacionado con el pago de pensiones alimenticias.",
-        "GlosarioCodigoImbaburatxt": "Esta descripción es un poco ambigua, pero podría referirse a un código o identificador utilizado anteriormente en la provincia de Imbabura en Ecuador en relación con algún aspecto del sistema de pensiones alimenticias. Sin más contexto, es difícil proporcionar una definición precisa.",
-        "GlosarioCedulaRepresentantetxt": "El número de identificación personal o cédula de identidad de la persona que actúa como representante legal en el caso de pensiones alimenticias. El representante legal puede ser un abogado o una persona designada para actuar en nombre de uno de los involucrados en el caso.",
-        "GlosarioCedulaDeudortxt": "El número de identificación personal o cédula de identidad del individuo que es responsable de realizar los pagos de pensiones alimenticias. En este caso, el deudor principal se refiere a la persona que debe cumplir con la obligación de pagar la pensión alimenticia.",
-        "GlosarioIdentificadortxt": "Un código o número que indica que cierta acción o proceso relacionado con las pensiones alimenticias ha sido aprobado. Puede referirse a la aprobación de pagos, ajustes en el monto de la pensión, o cualquier otro aspecto relacionado con el caso de pensiones alimenticias."
+
+    "ayuda": {
+        "titulo": "Ayuda",
+        "servicio": "Servicio",
+        "guiaUso": "Guía de uso",
+        "glosario": "Glosario",
+        "serviciotxt": "En nuestra plataforma, puedes realizar consultas sobre pensiones alimenticias con el número de identificación del principal obligado al pago o del representante legal del beneficiario.",
+        "guiaUsotxt": "Si tienes dudas sobre cómo realizar el proceso de búsqueda, ingresa al video tutorial.",
+        "glosarioCódigoTarjeta": "Código de tarjeta",
+        "glosarioNumero": "Número de proceso judicial",
+        "glosarioCodigoImbabura": "Código anterior Imbabura",
+        "glosarioCedulaRepresentante": "Cédula representante legal",
+        "glosarioCedulaDeudor": "Cédula del deudor principal",
+        "glosarioIdentificador": "Identificador de aprobación",
+        "glosarioCódigoTarjetatxt": "Un número o código único asignado a una tarjeta específica. En el contexto de pensiones alimenticias, podría referirse a una tarjeta de identificación o tarjeta bancaria asociada a un caso de pensiones alimenticias.",
+        "glosarioNumerotxt": "Un número único asignado a un caso legal que está siendo procesado en un tribunal. En el contexto de pensiones alimenticias, se utiliza para identificar de manera única el caso judicial relacionado con el pago de pensiones alimenticias.",
+        "glosarioCodigoImbaburatxt": "Esta descripción es un poco ambigua, pero podría referirse a un código o identificador utilizado anteriormente en la provincia de Imbabura en Ecuador en relación con algún aspecto del sistema de pensiones alimenticias. Sin más contexto, es difícil proporcionar una definición precisa.",
+        "glosarioCedulaRepresentantetxt": "El número de identificación personal o cédula de identidad de la persona que actúa como representante legal en el caso de pensiones alimenticias. El representante legal puede ser un abogado o una persona designada para actuar en nombre de uno de los involucrados en el caso.",
+        "glosarioCedulaDeudortxt": "El número de identificación personal o cédula de identidad del individuo que es responsable de realizar los pagos de pensiones alimenticias. En este caso, el deudor principal se refiere a la persona que debe cumplir con la obligación de pagar la pensión alimenticia.",
+        "glosarioIdentificadortxt": "Un código o número que indica que cierta acción o proceso relacionado con las pensiones alimenticias ha sido aprobado. Puede referirse a la aprobación de pagos, ajustes en el monto de la pensión, o cualquier otro aspecto relacionado con el caso de pensiones alimenticias."
     },
-    "TablaResultadoEncontrado": {
-        "Titulo1": "Código de tarjeta",
-        "Titulo2": "Número de proceso judicial",
-        "Titulo3": "Dependencia Jurisdiccional",
-        "Titulo4": "Tipo de pensión",
-        "Titulo5": "Intervinientes",
-        "Titulo6": "Detalle",
-        "Titulo3txt1": "Unidad Judicial Cuarta de la Familia, Mujer, Niñez y Adolescencia,con Sede en la parroquia Iñaquito del Distrito Metropolitano de Quito, provincia de Pichincha",
-        "Titululo4txt1": "Pensión alimenticia",
-        "Titulo5txt1": "Representante Legal",
-        "Titulo5txt2": "Obligado Principal",
-        "Titulo6txtBtn": "Revisar"
+
+    "tablaResultadoEncontrado": {
+        "titulo1": "Código de tarjeta",
+        "titulo2": "Número de proceso judicial",
+        "titulo3": "Dependencia jurisdiccional",
+        "titulo4": "Tipo de pensión",
+        "titulo5": "Intervinientes",
+        "titulo6": "Detalle",
+        "titulo3txt1": "Unidad Judicial Cuarta de la Familia, Mujer, Niñez y Adolescencia, con Sede en la parroquia Iñaquito del Distrito Metropolitano de Quito, provincia de Pichincha",
+        "titululo4txt1": "Pensión alimenticia",
+        "titulo5txt1": "Representante legal",
+        "titulo5txt2": "Obligado principal",
+        "titulo6txtBtn": "Revisar"
     },
-    "TablaInformacionGeneral": {
-        "Titulo1": "No",
-        "Titulo2": "Fecha de deuda",
-        "Titulo3": "Concepto",
-        "Titulo4": "Estado",
-        "Titulo5": "Valor de deuda",
-        "Titulo6": "Valor pagado",
-        "Titulo7": "Transacción",
-        "Titulo3txt1": "Pensión",
-        "Titulo3txt2": "Interés",
-        "Titulo3txt3": "Acuerdo de pago",
-        "Titulo4txt1": "Pagado",
-        "Titulo4txt2": "Pendiente",
-        "Titulo7txt1": "Acreditado",
-        "Titulo7txt2": "Pendiente"
+    "tablaInformacionGeneral": {
+        "titulo1": "No",
+        "titulo2": "Fecha de deuda",
+        "titulo3": "Concepto",
+        "titulo4": "Estado",
+        "titulo5": "Valor de deuda",
+        "titulo6": "Valor pagado",
+        "titulo7": "Transacción",
+        "titulo3txt1": "Pensión",
+        "titulo3txt2": "Interés",
+        "titulo3txt3": "Acuerdo de pago",
+        "titulo4txt1": "Pagado",
+        "titulo4txt2": "Pendiente",
+        "titulo7txt1": "Acreditado",
+        "titulo7txt2": "Pendiente"
     },
-    "TablaMovimientosPendientes": {
-        "Titulo1": "No",
-        "Titulo2": "Año",
-        "Titulo3": "Mes",
-        "Titulo4": "Concepto",
-        "Titulo5": "Valor de deuda",
-        "Titulo6": "Estado",
-        "Titulo7": "Fecha de deuda",
-        "Titulo4txt1": "Pensión",
-        "Titulo4txt2": "Interés",
-        "Titulo4txt3": "Acuerdo de pago",
-        "Titulo6txt1": "Pagado",
-        "Titulo6txt2": "Pendiente"
+
+    "tablaMovimientosPendientes": {
+        "titulo1": "No",
+        "titulo2": "Año",
+        "titulo3": "Mes",
+        "titulo4": "Concepto",
+        "titulo5": "Valor de deuda",
+        "titulo6": "Estado",
+        "titulo7": "Fecha de deuda",
+        "titulo4txt1": "Pensión",
+        "titulo4txt2": "Interés",
+        "titulo4txt3": "Acuerdo de pago",
+        "titulo6txt1": "Pagado",
+        "titulo6txt2": "Pendiente"
     },
-    "TablaIndexaciones": {
-        "Titulo1": "Tipo",
-        "Titulo2": "Presentacion de la demanda",
-        "Titulo3": "Resolución",
-        "Titulo4": "Valor Actual",
-        "Titulo5": "Observaciones",
-        "Titulo1txt1": "Indexación",
-        "Titulo1txt2": "Definitivo",
-        "Titulo1txt3": "Provisional",
-        "Titulo5txt3": "Indexación 2023",
-        "Titulo5txt2": "Indexación 2018",
-        "Titulo5txt1": "Indexación 2016",
-        "Titulo5txt4": "Pensión definitiva",
-        "Titulo5txt5": "Pensión Provisional"
+
+    "tablaIndexaciones": {
+        "titulo1": "Tipo",
+        "titulo2": "Presentación de la demanda",
+        "titulo3": "Resolución",
+        "titulo4": "Valor actual",
+        "titulo5": "Observaciones",
+        "titulo1txt1": "Indexación",
+        "titulo1txt2": "Definitivo",
+        "titulo1txt3": "Provisional",
+        "titulo5txt3": "Indexación 2023",
+        "titulo5txt2": "Indexación 2018",
+        "titulo5txt1": "Indexación 2016",
+        "titulo5txt4": "Pensión definitiva",
+        "titulo5txt5": "Pensión provisional"
     },
-    "Footer": {
+
+    "footer": {
         "slogan": "Construyendo un servicio de justicia para la paz social",
         "contacto": "CONTÁCTENOS 023953600/023999800 EXT: 25821 escuela.judicial@funcionjudicial.gob.ec"
     },
-    "LabelComboBox": {
-        "códigoTarjeta": "Código de tarjeta:",
+
+    "labelComboBox": {
+        "codigoTarjeta": "Código de tarjeta:",
         "numero": "Número de proceso judicial:",
         "codigoImbabura": "Código anterior Imbabura:",
         "cedulaRepresentante": "Número de Identificación:",
         "cedulaDeudor": "Número de Identificación:",
         "IdNUT": "Identificador de aprobación (NUT)"
     },
-    "MainBody": {
+
+    "mainBody": {
         "titulo": "CONSULTA DE TARJETAS DE PENSIÓN ALIMENTICIA",
         "criterio": "Criterio de búsqueda",
         "btnBuscar": "Buscar",
         "resultadoConsulta": "RESULTADOS DE LA CONSULTA"
     },
-    "BannerInfoGeneral": {
+
+    "bannerInfoGeneral": {
         "titulo": "DETALLE DE TARJETA DE PENSIÓN ALIMENTICIA",
         "infogeneral": "Información General",
         "movpendientes": "Movimientos Pendientes",
         "indexac": "Indexaciones"
     },
-    "InfoGeneral": {
+
+    "infoGeneral": {
         "intervi": "Intervinientes",
         "representante": "Representante legal:",
         "obligado": "Obligado principal:",
@@ -125,7 +134,8 @@
         "tipopen": "Pensión Alimenticia:",
         "pensactual": "Pensión Actual:"
     },
-    "FooterTablaMovPendientes": {
+
+    "footerTablaMovPendientes": {
         "numPensPendiente": "Número de pensiones pendientes:",
         "subtotalPens": "Subtotal de pensiones:",
         "subtotalInter": "Subtotal de intereses:",
@@ -133,11 +143,13 @@
         "totalPendiente": "Total pendiente",
         "otrasPendiente": "Número de otras pensiones pendientes:"
     },
-    "BannerGlosario": {
+
+    "bannerGlosario": {
         "titulo": "GLOSARIO DE TÉRMINOS",
         "btnCerrar": "Cerrar"
     },
-    "BodyGlosario": {
+
+    "bodyGlosario": {
         "indexa": "Indexación:",
         "defIndexa": "Proceso del incremento o subida de la pensión alimenticia la misma que se lleva a cabo cada año y esta se realiza automáticamente de acuerdo al Salario Básico.",
         "tipos": "Tipos de indexación:",
