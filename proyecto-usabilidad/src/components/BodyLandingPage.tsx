@@ -124,8 +124,8 @@ const BodyLandingPage = () => {
                                     onClick={(e) => e.stopPropagation()}
                                 >
                                     <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange}>
-                                            <option value='df' hidden>Seleccionar el idioma</option>
-                                            <option value="es" >Spanish</option>
+                                            <option value='df' hidden>{t("ayuda.idiomaSelec")}</option>
+                                            <option value="es" >Español</option>
                                             <option value="qu" >Quechua</option>
                                             <option value="sh" >Shuar</option>
                                     </select>
