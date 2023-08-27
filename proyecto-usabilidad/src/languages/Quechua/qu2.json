@@ -50,6 +50,11 @@
         "titulo6txtBtn": "Rikuy"
     },
 
+    "tablaResultadoNoEncontrado": {
+        "titulo1": "Wasiqpi ñawi kamay",
+        "contenido": "Ñuqa kaypi kamachiqpi kamaypi kamachiqmi kamachiqpi ñawi yanapakpi kani"
+    },
+
     "tablaInformacionGeneral": {
         "titulo1": "Mana",
         "titulo2": "Deuda ñawi",

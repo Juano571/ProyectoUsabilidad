@@ -51,6 +51,11 @@
         "titulo6txtBtn": "Kútska"
     },
 
+    "tablaResultadoNoEncontrado": {
+        "titulo1": "Wasiqpi ñawi mukani",
+        "contenido": "Ñuqa kaypi kamachiqpi shunka wakanaininkiai nampi kamachiqmi wakanaininkiai nampi ñawi yanapakpi kani"
+    },
+
 	"tablaInformacionGeneral": {
         "titulo1": "Num",
         "titulo2": "Tsúka wakanaininkiai",
