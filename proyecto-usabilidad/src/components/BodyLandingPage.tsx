@@ -67,7 +67,7 @@ const BodyLandingPage = () => {
         const language = e.target.value;
         i18n.changeLanguage(language); //change the language
         setLanguageSelectorOpen(false);
-        
+
     }
 
     //Ejemplos
@@ -85,6 +85,28 @@ const BodyLandingPage = () => {
                 return 'A123, 10950, OTA020A';
             case 'identificador_aprobacion':
                 return 'A00023';
+            default:
+                return '';
+        }
+    };
+
+    //Traducir combobox
+    const inputValue = () => {
+        switch (selectedValue) {
+            case 'df':
+                return t("comboBox.seleccionarCriterio");
+            case 'representante_legal':
+                return t("comboBox.cedulaRepresentante");
+            case 'deudor_principal':
+                return t("comboBox.cedulaDeudor");
+            case 'codigo_tarjeta':
+                return t("comboBox.codigoTarjeta");
+            case 'proceso_judicial':
+                return t("comboBox.numero");
+            case 'codigo_imbabura':
+                return t("comboBox.codigoImbabura");
+            case 'identificador_aprobacion':
+                return t("comboBox.identificador");
             default:
                 return '';
         }
@@ -115,7 +137,7 @@ const BodyLandingPage = () => {
                                     </div>
                                 </div>
                                 <div className='mt-5 flex sm:flex-row sm:items-center'>
-                                    {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>Ingrese {selectedOption}*:</label>}
+                                    {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>Ingrese {inputValue()}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
                                         <input type="text"
                                             required
@@ -123,7 +145,7 @@ const BodyLandingPage = () => {
                                             inputMode="numeric"
                                             value={value}
                                             onChange={handleInputChange}
-                                            placeholder={selectedOption}
+                                            placeholder={inputValue()}
                                             className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                         />
