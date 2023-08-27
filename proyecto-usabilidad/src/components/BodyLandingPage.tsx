@@ -17,8 +17,6 @@ const BodyLandingPage = () => {
     const [isParagraphVisible, setIsParagraphVisible] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState('');
 
-
-
     const handleSearchClick = (event: React.FormEvent) => {
         event.preventDefault();
         setVerifyShowResults(true);
@@ -27,7 +25,7 @@ const BodyLandingPage = () => {
             setShowResult(true); // Mostrar el resultado
         } else if (value == '') {
             setVerifyShowResults(false);
-            setErrorMessage('Este campo es obligatorio');
+            setErrorMessage(t("labelComboBox.obligatorio"));
         } else if (value === '1723427348') {
             setShowResult(false);
         } else {
@@ -162,7 +160,7 @@ const BodyLandingPage = () => {
                                         </button>
                                     </div>
                                 </div>
-                                {errorMessage && <p className="text-red-500 ml-56 text-center mt-2">{errorMessage}</p>}
+                                {errorMessage && <p className="text-red-500 ml-56 text-center mt-2">{t("labelComboBox.obligatorio")}</p>}
                             </form>
                         </div>
 
