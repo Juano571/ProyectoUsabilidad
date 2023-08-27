@@ -123,7 +123,9 @@
         "cedulaDeudor": "Número de Identificación:",
         "IdNUT": "Identificador de aprobación (NUT)",
         "ejemplo":"ejemplo",
-        "obligatorio": "Este campo es obligatorio"
+        "obligatorio": "Este campo es obligatorio",
+        "ingrese": "Ingrese",
+        "criBusqueda":"Criterio de busqueda"
     },
 
     "mainBody": {
