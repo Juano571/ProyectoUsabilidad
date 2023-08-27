@@ -77,7 +77,7 @@ const BodyLandingPage = () => {
                                             <option value="codigo_tarjeta">{t("comboBox.codigoTarjeta")}</option>
                                             <option value="proceso_judicial">{t("comboBox.numero")}</option>
                                             <option value="codigo_imbabura">{t("comboBox.codigoImbabura")}</option>
-                                            <option value="representante_legal">{t("comboBox.cedulaRepresentante")}l</option>
+                                            <option value="representante_legal">{t("comboBox.cedulaRepresentante")}</option>
                                             <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
                                             <option value="identificador_aprobacion">{t("comboBox.identificador")}</option>
                                         </select>
