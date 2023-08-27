@@ -1,8 +1,10 @@
 import React from 'react'
 import BannerDetalles from './BannerDetalles'
 import TableMovimientosPendientes from './TableMovimientosPendientes2'
+import { useTranslation } from 'react-i18next';
 
 const MovimientosPendientes = () => {
+    const {t} = useTranslation();
     return (
         <>
             <BannerDetalles />
@@ -13,19 +15,19 @@ const MovimientosPendientes = () => {
                 <div className='font-bold text-left'>
                     <ul>
                         <li className='p-2'>
-                            Número de pensiones pendientes:
+                            {t("footerTablaMovPendientes.numPensPendiente")}
                         </li>
                         <li className='p-2'>
-                            Subtotal de pensiones:
+                            {t("footerTablaMovPendientes.subtotalPens")}
                         </li>
                         <li className='p-2'>
-                            Subtotal intereses:
+                            {t("footerTablaMovPendientes.subtotalInter")}
                         </li>
                         <li className='p-2 pb-6'>
-                            Total pensiones más intereses:
+                            {t("footerTablaMovPendientes.totalPensioIntereses")}
                         </li>
                         <li className='p-2 text-xl'>
-                            Total pendiente:
+                            {t("footerTablaMovPendientes.totalPendiente")}
                         </li>
                     </ul>
                 </div>
@@ -51,10 +53,10 @@ const MovimientosPendientes = () => {
                 <div className='font-bold text-left'>
                     <ul>
                         <li className='p-2'>
-                            Número de otras pensiones pendientes:
+                            {t("footerTablaMovPendientes.otrasPendiente")}
                         </li>
                         <li className='p-2'>
-                            Total pensiones más intereses:
+                            {t("footerTablaMovPendientes.totalPensioIntereses")}
                         </li>
                     </ul>
                 </div>

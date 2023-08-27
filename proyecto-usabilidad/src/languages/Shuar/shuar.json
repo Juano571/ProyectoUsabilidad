@@ -78,7 +78,12 @@
         "titulo4txt2": "Kúts tsankiai",
         "titulo4txt3": "Kúts tsankiai tsukutai",
         "titulo6txt1": "Shúang waini",
-        "titulo6txt2": "Tsankiai"
+        "titulo6txt2": "Tsankiai",
+		"feb": "Yurank",
+        "mar":"Nase",
+        "abr":"Tuntiak",
+        "may":"Yumi",
+        "jun":"Tsunki"
     },
 
 	"tablaIndexaciones": {
@@ -94,7 +99,8 @@
         "titulo5txt2": "Indexación 2018",
         "titulo5txt1": "Indexación 2016",
         "titulo5txt4": "Kúts tsankiai shiá",
-        "titulo5txt5": "Kúts tsankiai tsúka"
+        "titulo5txt5": "Kúts tsankiai tsúka",
+		"titulo5txt6": "Indexación 2009"
     },
 
 	"footer": {
@@ -135,7 +141,8 @@
 		"dependencia": "Kúts tsankiai wakanaininkiai tsúka pútsa:",
 		"unidadjuris": "Waini Tsankiai kútska Tsúka Nanki yankut wakanaininkiai nanki wakanaininkiai nanki tsankiai tsankiai wakanaininkiai, kútska Tsúka, kútska Tsankiai, kútska Kámap, kútska Nanki wakanaininkiai kútska Waini tsukutai, tsankiai tsankiai Pichincha kútska Pichincha",
 		"tipopen": "Kúts tsankiai shiá:",
-		"pensactual": "Kúts tsankiai kámap:"
+		"pensactual": "Kúts tsankiai kámap:",
+		"tipoDepension": "Kútska kámap tsankiai"
 	},
 
 	"footerTablaMovPendientes": {

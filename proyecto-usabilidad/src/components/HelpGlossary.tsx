@@ -1,40 +1,42 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const HelpGlossary = () => {
+    const {t} = useTranslation();
     return (
         <div>
-            <div> Ayuda </div>
+            <div>{t("ayuda.titulo")}</div>
             <div>
                 
-                    <h3> Glosario </h3>
+                    <h3>{t("ayuda.glosario")}</h3>
                 
                 <div>
                     <img src="" alt="Imagen de un diccionario" />
                 </div>
                 <div>
                     <details>
-                        <summary>Datos del representante legal</summary>
-                        <p>Definicion de datos de representante legal...............</p>
+                        <summary>{t("ayuda.glosarioCedulaRepresentante")}</summary>
+                        <p>{t("ayuda.glosarioCedulaRepresentantetxt")}</p>
                     </details>
                     <details>
-                        <summary >Datos del deudor principal</summary>
-                        <p>Definicion de datos del deudor principal...............</p>
+                        <summary >{t("ayuda.glosarioCedulaDeudor")}</summary>
+                        <p>{t("ayuda.glosarioCedulaDeudortxt")}</p>
                     </details>
                     <details>
-                        <summary >Codigo de tarjeta </summary>
-                        <p>Definicion codigo de tarjeta...............</p>
+                        <summary >{t("ayuda.glosarioCódigoTarjeta")} </summary>
+                        <p>{t("ayuda.glosarioCódigoTarjetatxt")}</p>
                     </details>
                     <details>
-                        <summary >Codigo Imbabura</summary>
-                        <p>Definicion de codigo imbabura...............</p>
+                        <summary >{t("ayuda.glosarioCodigoImbabura")}</summary>
+                        <p>{t("ayuda.glosarioCodigoImbaburatxt")}</p>
                     </details>
                     <details>
-                        <summary>No. proceso judicial</summary>
-                        <p>Definicion del numero proceso judicial...............</p>
+                        <summary>{t("ayuda.glosarioNumero")}</summary>
+                        <p>{t("ayuda.glosarioNumerotxt")}</p>
                     </details>
                     <details>
-                        <summary>Identificacion nut</summary>
-                        <p>Definicion de datos de identificacion Nut...............</p>
+                        <summary>{t("ayuda.glosarioIdentificador")}</summary>
+                        <p>{t("ayuda.glosarioIdentificadortxt")}</p>
                     </details>
                 </div>
             </div>

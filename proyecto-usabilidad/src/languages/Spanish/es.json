@@ -76,7 +76,12 @@
         "titulo4txt2": "Interés",
         "titulo4txt3": "Acuerdo de pago",
         "titulo6txt1": "Pagado",
-        "titulo6txt2": "Pendiente"
+        "titulo6txt2": "Pendiente",
+        "feb": "Febrero",
+        "mar":"Marzo",
+        "abr":"Abril",
+        "may":"Mayo",
+        "jun":"Junio"
     },
 
     "tablaIndexaciones": {
@@ -92,7 +97,8 @@
         "titulo5txt2": "Indexación 2018",
         "titulo5txt1": "Indexación 2016",
         "titulo5txt4": "Pensión definitiva",
-        "titulo5txt5": "Pensión provisional"
+        "titulo5txt5": "Pensión provisional",
+        "titulo5txt6": "Indexación 2009"
     },
 
     "footer": {
@@ -133,7 +139,8 @@
         "dependencia": "Dependencia jurisdiccional:",
         "unidadjuris": "Unidad Judicial de Familia, Mujer, Niñez y Adolescencia con sede en el cantón Quito",
         "tipopen": "Pensión Alimenticia:",
-        "pensactual": "Pensión Actual:"
+        "pensactual": "Pensión Actual:",
+        "tipoDepension": "Tipo de pensión"
     },
 
     "footerTablaMovPendientes": {

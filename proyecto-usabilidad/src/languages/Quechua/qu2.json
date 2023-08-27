@@ -78,7 +78,12 @@
         "titulo4txt2": "Lluqsinchi",
         "titulo4txt3": "Yachachiq yachanichuq",
         "titulo6txt1": "Yatay",
-        "titulo6txt2": "P'unchay"
+        "titulo6txt2": "P'unchay",
+        "feb": "Phaway killa",
+        "mar": "Pacha killa",
+        "abr": "Aymuray",
+        "may": "Kawsay killa",
+        "jun": "Inti raymi killa"
     },
 
     "tablaIndexaciones": {
@@ -94,7 +99,8 @@
         "titulo5txt2": "Indexación 2018",
         "titulo5txt1": "Indexación 2016",
         "titulo5txt4": "Mikhuy yachachiqpa definitivo",
-        "titulo5txt5": "Mikhuy yachachiqpa provisional"
+        "titulo5txt5": "Mikhuy yachachiqpa provisional",
+        "titulo5txt6": "Indexación 2009"
     },
 
     "footer": {
@@ -135,7 +141,8 @@
         "dependencia": "Llaqta ruraynin kachkaninku:",
         "unidadjuris": "Hatun ñanpi Minka Warmi, Warmikuna, Ñuqa yachachiqpa, Wanlla t'ikra yaykuna kachkaninku, Qutu llaqtapi",
         "tipopen": "Mikhuy kikinpi:",
-        "pensactual": "Mikhuy yuyay:"
+        "pensactual": "Mikhuy yuyay:",
+        "tipoDepension": "Piñanpi kamachiqpi"
     },
 
     "footerTablaMovPendientes": {
