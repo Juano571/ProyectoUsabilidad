@@ -18,8 +18,8 @@
         "titulo": "Nantu",
         "servicio": "Waini",
         "guiaUso": "Shiu waini",
-        "glosario": "Kunkuak shiá",
-        "serviciotxt": "Nunkui shípi, kúts tsintsan wakanaininkiai waini kámap, kúts tsintsan yámuk wakanaininkiai kútska kúmuk waini tsukutai.",
+        "glosario": "Qillqa mukani kamachiq shunka yupaypi",
+        "serviciotxt": "Mukani, ñu rintanami, kucha nani kamachiq shunka wakanaininkiai ninkui nampi pukchinkanani, shuka yaya wakanaininkiai nampi kúmuk tayana kamaypi tsúka nampi ayak pachankuta shimaini, kuka nani piñanpi yuankami shiari piñanpi.",
         "guiaUsotxt": "Tsantsankui kuash wakanaininkiai kúmpa, kúts intiuk kámap atunkukai kúts tsintsan waini tsukutai.",
         "glosarioCódigoTarjeta": "Numa shawi tayana",
         "glosarioNumero": "Numa shawi jipinana shiá",
@@ -32,7 +32,9 @@
         "glosarioCodigoImbaburatxt": "Numa pútsa shúang, tsanuk yákian pachama Imbabura, yankut kútskai patsainkiai kúts tsintsan wakanaininkiai kútska waini tsukutai. Kútskananki yatsunai, shúang tsunuk wakanaininkiai kúts tsintsan waini tsukutai.",
         "glosarioCedulaRepresentantetxt": "Tsintsan kúts kútska yámuk wakanaininkiai tsanuk wakanaininkiai tsukutai. Tsúka kúts wakanaininkiai kútska kúmuk tsankiai wakanaininkiai tsukutai, pútsa kútska wakanaininkiai waini tsukutai.",
         "glosarioCedulaDeudortxt": "Tsintsan tsankiai kúts wakanaininkiai tsanuk wakanaininkiai tsukutai. Kúts tsanuk wakanaininkiai tsankiai, tsúka kútska wakanaininkiai tsanuk kámap tsukutai nanki wakanaininkiai waini tsukutai.",
-        "glosarioIdentificadortxt": "Numa kúts pútsa shúang, nukui tsankiai kúts wakanaininkiai tsanuk kámap tsukutai. Kúts tsankiai, kútska tsanuk kámap wakanaininkiai, yatsunai kútska tsanuk wakanaininkiai kútska waini tsukutai."
+        "glosarioIdentificadortxt": "Numa kúts pútsa shúang, nukui tsankiai kúts wakanaininkiai tsanuk kámap tsukutai. Kúts tsankiai, kútska tsanuk kámap wakanaininkiai, yatsunai kútska tsanuk wakanaininkiai kútska waini tsukutai.",
+        "idiomaSelec": "Kamachiq rintanapak"
+
     },
 
 	"tablaResultadoEncontrado": {
@@ -105,7 +107,7 @@
 
 	"footer": {
 		"slogan": "Tsankiai shiá waini kútska kúmuk kúts wakanaininkiai tsukutai",
-		"contacto": "KÚNKAUK wakanaininkiai 023953600/023999800 EXT: 25821 escuela.judicial@funcionjudicial.gob.ec"
+		"contacto": "KÚNKAUK"
 	},
 
 	"labelComboBox": {

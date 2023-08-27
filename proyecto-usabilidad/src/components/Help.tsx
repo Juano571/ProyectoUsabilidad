@@ -34,10 +34,7 @@ const Help = () => {
                             </div>
                             <div className='flex my-4'>
                                 <p className='w-[100%] text-justify'>
-                                    En nuestra plataforma puedes realizar consultas sobre pensiones alimenticias
-                                    con el numero de identificacion del principal obligado al pago o del representante legal
-                                    del beneficiario, de manera sencilla al seleccionar un criterio de búsqueda e ingresando
-                                    la información del dato seleccionado.
+                                {t("ayuda.serviciotxt")}
                                 </p>
                             </div>
                         </div>
@@ -45,7 +42,7 @@ const Help = () => {
                         <div className='flex-col text-center items-center justify-center pt-8 ml-10'>
                             <div className='flex'>
                                 <FontAwesomeIcon icon={faIdCard} className="w-8 h-8 mr-5 bg-white text-[#245383] rounded-full" />
-                                <h1 className='text-2xl font-semibold uppercase'>Glosario de criterios de búsqueda</h1>
+                                <h1 className='text-2xl font-semibold uppercase'>{t("ayuda.glosario")}</h1>
                             </div>
                             <HelpGlossary />
                         </div>
@@ -64,8 +61,8 @@ const Help = () => {
                                     onClick={(e) => e.stopPropagation()}
                                 >
                                     <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange}>
-                                        <option value='df' hidden>Seleccionar el idioma</option>
-                                        <option value="es" >Spanish</option>
+                                        <option value='df' hidden>{t("ayuda.idiomaSelec")}</option>
+                                        <option value="es" >Español</option>
                                         <option value="qu" >Quechua</option>
                                         <option value="sh" >Shuar</option>
                                     </select>

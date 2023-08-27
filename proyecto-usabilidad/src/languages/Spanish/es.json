@@ -17,8 +17,8 @@
         "titulo": "Ayuda",
         "servicio": "Servicio",
         "guiaUso": "Guía de uso",
-        "glosario": "Glosario",
-        "serviciotxt": "En nuestra plataforma, puedes realizar consultas sobre pensiones alimenticias con el número de identificación del principal obligado al pago o del representante legal del beneficiario.",
+        "glosario": "Glosario de criterios de búsqueda",
+        "serviciotxt": "En nuestra plataforma, puedes realizar consultas sobre pensiones alimenticias con el número de identificación del principal obligado al pago o del representante legal del beneficiario, de manera sencilla al seleccionar un criterio de búsqueda e ingresando la información del dato seleccionado.",
         "guiaUsotxt": "Si tienes dudas sobre cómo realizar el proceso de búsqueda, ingresa al video tutorial.",
         "glosarioCódigoTarjeta": "Código de tarjeta",
         "glosarioNumero": "Número de proceso judicial",
@@ -31,9 +31,12 @@
         "glosarioCodigoImbaburatxt": "Esta descripción es un poco ambigua, pero podría referirse a un código o identificador utilizado anteriormente en la provincia de Imbabura en Ecuador en relación con algún aspecto del sistema de pensiones alimenticias. Sin más contexto, es difícil proporcionar una definición precisa.",
         "glosarioCedulaRepresentantetxt": "El número de identificación personal o cédula de identidad de la persona que actúa como representante legal en el caso de pensiones alimenticias. El representante legal puede ser un abogado o una persona designada para actuar en nombre de uno de los involucrados en el caso.",
         "glosarioCedulaDeudortxt": "El número de identificación personal o cédula de identidad del individuo que es responsable de realizar los pagos de pensiones alimenticias. En este caso, el deudor principal se refiere a la persona que debe cumplir con la obligación de pagar la pensión alimenticia.",
-        "glosarioIdentificadortxt": "Un código o número que indica que cierta acción o proceso relacionado con las pensiones alimenticias ha sido aprobado. Puede referirse a la aprobación de pagos, ajustes en el monto de la pensión, o cualquier otro aspecto relacionado con el caso de pensiones alimenticias."
+        "glosarioIdentificadortxt": "Un código o número que indica que cierta acción o proceso relacionado con las pensiones alimenticias ha sido aprobado. Puede referirse a la aprobación de pagos, ajustes en el monto de la pensión, o cualquier otro aspecto relacionado con el caso de pensiones alimenticias.",
+        "idiomaSelec": "Seleccionar el idioma"
+       
     },
 
+    
     "tablaResultadoEncontrado": {
         "titulo1": "Código de tarjeta",
         "titulo2": "Número de proceso judicial",
@@ -103,7 +106,7 @@
 
     "footer": {
         "slogan": "Construyendo un servicio de justicia para la paz social",
-        "contacto": "CONTÁCTENOS 023953600/023999800 EXT: 25821 escuela.judicial@funcionjudicial.gob.ec"
+        "contacto": "CONTÁCTENOS"
     },
 
     "labelComboBox": {

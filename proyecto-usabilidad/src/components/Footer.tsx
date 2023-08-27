@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             <div className="w-2/3 text-center my-3 text-lg">
                 <ul>
                     <li>
-                        CONTÁCTANOS
+                    {t("footer.contacto")}
                     </li>
                     <li>
                         02 3953600 / 02 3999800
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                         EXT: 25821
                     </li>
                     <li>
-                        escuela.juducial@funcionjudicial.gob.ec
+                        escuela.judicial@funcionjudicial.gob.ec
                     </li>
                 </ul>
             </div>

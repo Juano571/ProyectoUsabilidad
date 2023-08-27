@@ -18,8 +18,8 @@
         "titulo": "Yanapa",
         "servicio": "Ruray",
         "guiaUso": "Yachachiq wasipi",
-        "glosario": "Yachachiq yuyay",
-        "serviciotxt": "Ñuqa yanapa kay pachapi, mikhuy yuyaykuna pakarichiy nisqa llaqtayuq kikinpa ñawi kachkaninkuwan ñuqa, warmikuna watanpi kikinpa ñawi kachkaninkuwan ñuqa.",
+        "glosario": "Qillqa qillqa riqsichina qillqanakuna",
+        "serviciotxt": "Qillqanaka, ñuqa platforman, kanan ñuqa kamachiqpi kamaypi piñanpi kamachiqpi rurasqan yuyarinachiyqa kanka kay ñawinmi kachkan wakanaininkiai tsankiai shina takirinaqa, qillqan riqsichiy kay riqsichiq, hatun riqsichina wakanaininkiaipi yupaykichin. Kay ñawiqa kachkaniqa ñawinchikmi ñawi kay wakanaininkiai yupaypi.",
         "guiaUsotxt": "Maypi chaymanqa wakin yanapa kachkaninka p'unchayninchikmi yachanichuqpi rimanaq.",
         "glosarioCódigoTarjeta": "Taripay yachaypi ñawi",
         "glosarioNumero": "Yanapa llaqtayuq justisia númeru",
@@ -32,7 +32,8 @@
         "glosarioCodigoImbaburatxt": "Kutiyuq kaywanmi, Imbabura llaqtapi chaymi kachkaninku kaypi qillqa ñawi ñisqa kama qallta ñawi. Mana rimanakuyta kachkaninku tukuy kama rimaykunapi.",
         "glosarioCedulaRepresentantetxt": "Yachachiqmi kikinpa ñawi ñisqa llaqtayuqmi kikinpa ñawinpi. Yachachiqmi kikinpa, abogado wan p'anqayta, chaymi kikinpa yanapa kachkaninku llaqtayuq kikinpi ñawinpi kaywanmi.",
         "glosarioCedulaDeudortxt": "Yachachiqmi kikinpa ñawi ñisqa kikinpa ñawi ñawinpi. Kaymi, kikinpa kikinpi yanapa kachkaninku kaywanmi ñisqawan ñawinpi, mikhuy yuyaykuna pakarichiykunawan.",
-        "glosarioIdentificadortxt": "Kama qallta ñawi kachkaninku ñisqa, kay qillqa ñawi kaywanmi yanapa kachkaninku kikinpi ñawinpi kaywanmi. Yanapa kachkaninku kikinpi ñawinpi, yanapa yachachiqmi pachapi, mikhuy yuyaykuna pakarichiykunawan kikinpi kaywanmi."
+        "glosarioIdentificadortxt": "Kama qallta ñawi kachkaninku ñisqa, kay qillqa ñawi kaywanmi yanapa kachkaninku kikinpi ñawinpi kaywanmi. Yanapa kachkaninku kikinpi ñawinpi, yanapa yachachiqmi pachapi, mikhuy yuyaykuna pakarichiykunawan kikinpi kaywanmi.",
+        "idiomaSelec": "Riqsichiy yachanakuy"
     },
 
     "tablaResultadoEncontrado": {
@@ -105,7 +106,7 @@
 
     "footer": {
         "slogan": "Minka yachachiqmi warmi llaqtayuqmi kawsaypaq kaypi ñawi rurayta churakuy",
-        "contacto": "Ñuqa ñawinmi 023953600/023999800 EXT: 25821 wasi yachachiqmi@funcionjudicial.gob.ec"
+        "contacto": "ÑUQA ÑAWINMI"
     },
 
     "labelComboBox": {
