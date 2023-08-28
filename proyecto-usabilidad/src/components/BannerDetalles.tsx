@@ -39,19 +39,6 @@ const BannerDetalles = ({ closeModal }) => {
                         </div>
                     </div>
                 </div>
-                {/*
-                <div className='flex mx-8 pu-4 items-center text-white text-xl justify-center' tabIndex={0} >
-                    <div tabIndex={0} onClick={() => handleComponentChange('informacion')} className="py-4 cursor-pointer transition duration-300 hover:bg-slate-600 w-80 text-center">
-                        <h2 className='uppercase' >{t("bannerInfoGeneral.infogeneral")}</h2>
-                    </div>
-                    <div tabIndex={0} onClick={() => handleComponentChange('movimientos')} className='p-4 cursor-pointer transition duration-300 hover:bg-slate-600 w-80 text-center'>
-                        <h2 className='uppercase'>{t("bannerInfoGeneral.movpendientes")}</h2>
-                    </div>
-                    <div tabIndex={0} onClick={() => handleComponentChange('indexaciones')} className='p-4 cursor-pointer transition duration-300 hover:bg-slate-600 w-80 text-center'>
-                        <h2 className='uppercase'>{t("bannerInfoGeneral.indexac")}</h2>
-                    </div>
-                </div>
-                 */}
 
                 <div className='flex mx-8 py-4 items-center text-white text-xl justify-center' role="navigation" aria-label="Navegación de componentes" tabIndex={0}>
                     <nav className="flex space-x-4">
