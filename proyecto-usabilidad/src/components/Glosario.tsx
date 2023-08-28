@@ -10,7 +10,7 @@ const Glosario = ({ closeModal }) => {
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
-            <div className="w-7/12 mx-auto bg-white  rounded shadow my-10 rounded-xl" onClick={stopPropagation}>
+            <div className="w-7/12 mx-auto bg-white  shadow my-10 rounded-xl" onClick={stopPropagation}>
                 <div className='w-full bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover rounded-t-xl'>
                     <div className='flex-col items-center justify-around'>
                         <div className='flex justify-between pl-5 pr-10 py-4'>
