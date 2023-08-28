@@ -20,7 +20,7 @@ const InformacionGeneral = () => {
                                     {t("tablaResultadoEncontrado.titulo5txt1")}
                                 </summary>
                                 <p className='ml-2'>
-                                    María Concepción Reascos Fiallos
+                                OLIMPIA ESMERALDA QUIROZ CARRERA
                                 </p>
                             </div>
                             <div>
@@ -28,7 +28,7 @@ const InformacionGeneral = () => {
                                     {t("infoGeneral.obligado")}
                                 </summary>
                                 <p className='ml-2'>
-                                    Mateo Sebastián Garces Zambrano
+                                JORGE ENRIQUE REVELO ROSERO
                                 </p>
                             </div>
                         </div>
