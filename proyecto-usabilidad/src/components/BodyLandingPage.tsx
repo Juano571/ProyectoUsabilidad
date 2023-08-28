@@ -156,6 +156,7 @@ const BodyLandingPage = () => {
                                             value={value}
                                             onChange={handleInputChange}    
                                             placeholder={inputValue()}
+                                            tabIndex={8}
                                             className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                         />
