@@ -6,6 +6,7 @@ import TableSearchResults from './TableSearchResults';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
+import Help from './Help';
 
 
 const BodyLandingPage = () => {
@@ -16,7 +17,15 @@ const BodyLandingPage = () => {
     const [selectedValue, setSelectedValue] = useState<string>('');
     const [isParagraphVisible, setIsParagraphVisible] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
 
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     const handleSearchClick = (event: React.FormEvent) => {
         event.preventDefault();
         setVerifyShowResults(true);
@@ -188,10 +197,13 @@ const BodyLandingPage = () => {
                                 </div>
                             )}
                         </div>
-                        <div >
-                            <a href="https://markdown.es/sintaxis-markdown/#imagenes" target="_blank"><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
+                        <div onClick={openModal}>
+                            <a target="_blank" ><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
 
                         </div>
+                        {isModalOpen && (
+                <Help closeModal={closeModal} />
+            )}
                     </div>
                 </div>
             </div>
