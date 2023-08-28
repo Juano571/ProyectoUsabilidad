@@ -3,10 +3,15 @@ import BannerDetalles from './BannerDetalles'
 import TableMovimientosPendientes from './TableMovimientosPendientes2'
 import { useTranslation } from 'react-i18next';
 
-const MovimientosPendientes = () => {
+const MovimientosPendientes = ({ tabIndex }: { tabIndex: number }) => {
     const { t } = useTranslation();
+    
     return (
-        <div className='m-10'>
+        <div className='m-10'
+        autoFocus
+        tabIndex={tabIndex}
+        role="region"
+        aria-labelledby="MovimientosPendientes-title">
             {/*<BannerDetalles closeModal={closeModal}/>*/}
             <div className='flex justify-center m-5'>
                 <TableMovimientosPendientes />

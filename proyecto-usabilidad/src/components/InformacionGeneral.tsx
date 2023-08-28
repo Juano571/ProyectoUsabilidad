@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import BannerDetalles from './BannerDetalles'
 import TableInformacionGeneral from './TableInformacionGeneral'
 import { useTranslation } from 'react-i18next';
 
-const InformacionGeneral = () => {
+const InformacionGeneral = ({ tabIndex }: { tabIndex: number }) => {
     const { t } = useTranslation();
+    const informacionRef = useRef<HTMLDivElement | null>(null);
     return (
         <>
             {/*<BannerDetalles closeModal={closeModal}/>*/}
-            <div className='flex justify-center m-5'>
+            <div className='flex justify-center m-5' ref={informacionRef}
+            tabIndex={tabIndex}
+            role="region"
+            aria-labelledby="informacion-title">
                 <div className='m-5'>
                     <div className='w-72 text-justify mb-3'>
                         <div className='text-white bg-[#245383] font-semibold rounded-3xl px-8 py-2 uppercase'>
@@ -28,7 +32,7 @@ const InformacionGeneral = () => {
                                     {t("infoGeneral.obligado")}
                                 </summary>
                                 <p className='ml-2'>
-                                JORGE ENRIQUE REVELO ROSERO
+                                    JORGE ENRIQUE REVELO ROSERO
                                 </p>
                             </div>
                         </div>
