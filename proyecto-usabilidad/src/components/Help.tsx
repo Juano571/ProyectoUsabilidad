@@ -22,13 +22,15 @@ const Help = ({ closeModal }) => {
         setLanguageSelectorOpen(false);
     }
 
+    
+
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal} aria-modal="true" autoFocus tabIndex={0}>
             <div onClick={stopPropagation} className='flex flex-col h-screen bg-white overflow-y-auto' >
                 <Banner />
                 <div className='flex mt-[2%] mr-[2%] ml-[2%] justify-between'>
-                    <div onClick={closeModal}>
+                    <div onClick={closeModal}>  
                         <FontAwesomeIcon aria-label={t("ayuda.idiomaSelec")} icon={faArrowLeft} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                     </div>
                     <div className="relative inline-block">

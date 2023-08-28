@@ -27,7 +27,7 @@ const BannerDetalles = ({ closeModal }) => {
 
 
     return (
-        <div className='rounded-t-xl overflow-y-auto h-screen' aria-modal="true" autoFocus tabIndex={-1}>
+        <div className='rounded-t-xl overflow-y-auto h-screen' aria-modal="true" autoFocus tabIndex={0}>
             <div className='bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover rounded-t-xl' autoFocus tabIndex={0}>
                 <div className='w-full flex-col items-center justify-around'>
                     <div className='flex justify-between mx-8 py-4'>
@@ -70,12 +70,12 @@ const BannerDetalles = ({ closeModal }) => {
             </div>
 
             <div>
-                {/* ... */}
-                {activeComponent === 'informacion' && <InformacionGeneral tabIndex={0} />}
-                {activeComponent === 'movimientos' && <MovimientosPendientes tabIndex={0} />}
-                {activeComponent === 'indexaciones' && <Indexaciones tabIndex={0} />}
-                {/* ... */}
-            </div>
+    {/* ... */}
+    {activeComponent === 'informacion' && <InformacionGeneral tabIndex={0} />}
+    {activeComponent === 'movimientos' && <MovimientosPendientes tabIndex={0} />}
+    {activeComponent === 'indexaciones' && <Indexaciones tabIndex={0} />}
+    {/* ... */}
+</div>
         </div>
     )
 }
