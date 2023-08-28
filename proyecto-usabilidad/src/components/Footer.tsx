@@ -24,13 +24,13 @@ const Footer: React.FC = () => {
         <footer className="h-fit px-10 py-4  flex justify-between text-white bg-[#245383] bg-cover bg-[url('/images/shiny-overlay.svg')]">
             <div className='flex items-center justify-around'>
                 <div className='text-xl'>
-                    <p>{t("footer.slogan")}</p>
+                    <p tabIndex={10}>{t("footer.slogan")}</p>
                 </div>
             </div>
 
-            <div className="w-2/3 text-center my-3 text-lg">
+            <div className="w-2/3 text-center my-3 text-lg" tabIndex={11}>
                 <ul>
-                    <li>
+                    <li >
                     {t("footer.contacto")}
                     </li>
                     <li>
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                 </ul>
             </div>
 
-            <div className="flex w-1/3 my-4 justify-end">
+            <div className="flex w-1/3 my-4 justify-end" tabIndex={12}>
                 <img src="/images/gobierno.svg" alt="Logo del gobierno del Ecuador" />
             </div>
         </footer >

@@ -130,9 +130,9 @@ const BodyLandingPage = () => {
                         <div className='flex py-10'>
                             <form>
                                 <div className='flex'>
-                                    <label className='pt-1 text-lg font-medium w-96' tabIndex={4}>{t("mainBody.criterio")}:</label>
+                                    <label className='pt-1 text-lg font-medium w-96' tabIndex={6} >{t("mainBody.criterio")}:</label>
                                     <div>
-                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' tabIndex={5}>
+                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' aria-label = "Menú para seleccionar el criterio de búsqueda" tabIndex={6}>
                                             <option value='df' hidden>{t("comboBox.seleccionarCriterio")}</option>
                                             <option value="representante_legal">{t("comboBox.cedulaRepresentante")}</option>
                                             <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
@@ -144,18 +144,22 @@ const BodyLandingPage = () => {
                                     </div>
                                 </div>
                                 <div className='mt-5 flex sm:flex-row sm:items-center'>
-                                    {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>Ingrese {inputValue()}*:</label>}
+                                    {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>{t("labelComboBox.ingrese")} {inputValue()}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
+                                            
                                         <input type="text"
                                             required
                                             pattern="\d*"
                                             inputMode="numeric"
+                                            id = "Dato"
+                                            aria-label="Ingrese los datos de manera obligatoria"
                                             value={value}
-                                            onChange={handleInputChange}
+                                            onChange={handleInputChange}    
                                             placeholder={inputValue()}
                                             className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                         />
+                                
                                         <div className='text-gray-400 mt-3' style={{ display: isParagraphVisible ? 'block' : 'none' }}>
                                             <span className='capitalize ml-5 text-lg'>{t("labelComboBox.ejemplo")}: </span>
                                             <span>{renderExample()}</span>
@@ -165,11 +169,14 @@ const BodyLandingPage = () => {
                                         <button onClick={handleSearchClick}
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                             className='w-full sm:w-32 sm:mt-0 rounded-3xl py-2 bg-[#245383] hover:bg-blue-600 focus:bg-blue-500 text-white font-medium focus:outline-none focus:ring focus:ring-blue-200'
+                                            tabIndex={8}
                                         >{t("mainBody.btnBuscar")}
                                         </button>
                                     </div>
                                 </div>
-                                {errorMessage && <p className="text-red-500 ml-56 text-center mt-2">{t("labelComboBox.obligatorio")}</p>}
+                                {errorMessage && <p  className="text-red-500 ml-56 text-center mt-2" role="alert">{t("labelComboBox.obligatorio")}</p>}
+                               
+
                             </form>
                         </div>
 
@@ -177,8 +184,8 @@ const BodyLandingPage = () => {
                     </div>
                     <div className='col-span-1 flex flex-col justify-between mr-8'>
                         <div className="relative inline-block">
-                            <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}>
-                                <FontAwesomeIcon
+                            <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}  tabIndex={4} aria-label="Botón para seleccionar el idioma">
+                                <FontAwesomeIcon    
                                     icon={faGlobe}
                                     className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
                                 />
@@ -188,7 +195,7 @@ const BodyLandingPage = () => {
                                     className="absolute bottom-[-2.5rem] right-2 z-10"
                                     onClick={(e) => e.stopPropagation()}
                                 >
-                                    <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange}>
+                                    <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange} tabIndex={5}>
                                         <option value='df' hidden>{t("ayuda.idiomaSelec")}</option>
                                         <option value="es" >Español</option>
                                         <option value="qu" >Quechua</option>
@@ -197,8 +204,9 @@ const BodyLandingPage = () => {
                                 </div>
                             )}
                         </div>
-                        <div onClick={openModal}>
-                            <a target="_blank" ><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
+                        <div onClick={openModal} tabIndex={9}>
+                        
+                            <a target="_blank" ><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"  /></a>
 
                         </div>
                         {isModalOpen && (
