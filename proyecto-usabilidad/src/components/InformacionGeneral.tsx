@@ -8,8 +8,8 @@ const InformacionGeneral = () => {
     return (
         <>
             {/*<BannerDetalles closeModal={closeModal}/>*/}
-            <div className='flex justify-center'>
-                <div className='relative m-5'>
+            <div className='flex justify-center m-5'>
+                <div className='m-5'>
                     <div className='w-72 text-justify mb-3'>
                         <div className='text-white bg-[#245383] font-semibold rounded-3xl px-8 py-2 uppercase'>
                             {t("tablaResultadoEncontrado.titulo5")}:
@@ -33,7 +33,7 @@ const InformacionGeneral = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-72 text-justify mb-3'>
+                    <div className='w-72 text-justify '>
                         <div className='text-white bg-[#245383] font-semibold rounded-3xl px-8 py-2 uppercase'>
                             {t("infoGeneral.infotitulo")}
                         </div>

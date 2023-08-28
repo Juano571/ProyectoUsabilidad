@@ -9,11 +9,11 @@ const Glosario = ({ closeModal }) => {
     };
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 " onClick={closeModal}>
-            <div className=" mx-auto bg-white  rounded shadow my-10 rounded-xl" onClick={stopPropagation}>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
+            <div className="w-7/12 mx-auto bg-white  rounded shadow my-10 rounded-xl" onClick={stopPropagation}>
                 <div className='w-full bg-[#245383] bg-[url("/images/shiny-overlay.svg")] bg-cover rounded-t-xl'>
                     <div className='flex-col items-center justify-around'>
-                        <div className='flex justify-between pl-2 pr-8 py-4'>
+                        <div className='flex justify-between pl-5 pr-10 py-4'>
                             <div className='flex'>
                                 <div>
                                     <FontAwesomeIcon icon={faBook} className="w-20 h-9 mr-2 text-white" />
@@ -28,16 +28,16 @@ const Glosario = ({ closeModal }) => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className='flex-col text-center items-center justify-center m-5'>
+                <div className='mx-10 my-5'>
+                    <div className='flex-col text-center items-center justify-center'>
                         <div className='my-4 ml-3'>
                             <summary className='text-lg text-left font-medium'>{t("bodyGlosario.indexa")}</summary>
                             <p className='justify-start text-justify  my-3'>{t("bodyGlosario.defIndexa")}</p>
                         </div>
                     </div>
 
-                    <div className='flex-col text-center items-center justify-center m-5'>
-                        <div className='flex my-4 ml-3'>
+                    <div className='flex-col text-center items-center justify-center'>
+                        <div className='flex mb-4 ml-3'>
                             <summary className='font-semibold text-lg mr-2'>{t("bodyGlosario.tipos")}</summary>
                         </div>
                         <div className='flex my-4 ml-3'>

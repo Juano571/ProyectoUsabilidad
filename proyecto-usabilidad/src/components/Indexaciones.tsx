@@ -17,22 +17,18 @@ const Indexaciones = () => {
         setIsModalOpen(false);
     };
     return (
-        <div>
+        <div className='mx-10 my-8'>
             {/*<BannerDetalles closeModal={closeModal}/>*/}
             <div onClick={openModal}>
-                <p className='flex ml-10 mt-4 mb-4 textc text-[#245383] text-xl underline'>
-                    <FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                <p className='flex mb-8 textc text-[#245383] text-xl underline hover:text-blue-500'>
+                    <FontAwesomeIcon icon={faQuestionCircle} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                     {t("bannerGlosario.titulo")}
                 </p>
-
             </div>
 
             <div className='flex justify-center'>
                 <TableIndexaciones />
                 {/*<Glosario closeModal={closeModal}/>*/}
-            </div>
-            <div className='relative top-14 ml-10 mt-12'>
-                {/* <TableIndexaciones/> */}
             </div>
             {isModalOpen && (
                 <Glosario closeModal={closeModal} />
