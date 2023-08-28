@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from "react-i18next";
 
-const Indexaciones = () => {
+const Indexaciones = ({ tabIndex }: { tabIndex: number }) => {
     const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => {
@@ -17,7 +17,11 @@ const Indexaciones = () => {
         setIsModalOpen(false);
     };
     return (
-        <div className='mx-10 my-8'>
+        <div className='mx-10 my-8' 
+        autoFocus
+        tabIndex={tabIndex}
+        role="region"
+        aria-labelledby="MovimientosPendientes-title">
             {/*<BannerDetalles closeModal={closeModal}/>*/}
             <div onClick={openModal}>
                 <p className='flex mb-8 textc text-[#245383] text-xl underline hover:text-blue-500'>
