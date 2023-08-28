@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
 import Help from './Help';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 
 const BodyLandingPage = () => {
@@ -211,14 +212,10 @@ const BodyLandingPage = () => {
                         </div>
                         <div onClick={openModal} >
                             <nav>
-                                <button onClick={() => handleComponentChange()} tabIndex={9}>
+                                <button onClick={() => handleComponentChange() }aria-label='Buton de ayuda' tabIndex={9}>
                                     <FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                                 </button>
-                            </nav>
-                            {/* 
-                             <a target="_blank" ><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
-                            */}
-                           
+                            </nav>                           
 
                         </div>
 
