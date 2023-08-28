@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import TableNoResults from './TableNoResults'
 import Footer from './Footer'
 import Banner from './Banner'
@@ -18,7 +18,7 @@ const BodyLandingPage = () => {
     const [isParagraphVisible, setIsParagraphVisible] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
-    
+
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -118,6 +118,10 @@ const BodyLandingPage = () => {
                 return '';
         }
     };
+    const helpRef = useRef<HTMLDivElement | null>(null);
+    const handleComponentChange = () => {
+        helpRef.current?.focus();
+    };
 
     return (
         <body className='flex flex-col h-screen'>
@@ -132,7 +136,7 @@ const BodyLandingPage = () => {
                                 <div className='flex'>
                                     <label className='pt-1 text-lg font-medium w-96' tabIndex={6} >{t("mainBody.criterio")}:</label>
                                     <div>
-                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' aria-label = "Menú para seleccionar el criterio de búsqueda" tabIndex={6}>
+                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' aria-label="Menú para seleccionar el criterio de búsqueda" tabIndex={6}>
                                             <option value='df' hidden>{t("comboBox.seleccionarCriterio")}</option>
                                             <option value="representante_legal">{t("comboBox.cedulaRepresentante")}</option>
                                             <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
@@ -146,21 +150,21 @@ const BodyLandingPage = () => {
                                 <div className='mt-5 flex sm:flex-row sm:items-center'>
                                     {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>{t("labelComboBox.ingrese")} {inputValue()}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
-                                            
+
                                         <input type="text"
                                             required
                                             pattern="\d*"
                                             inputMode="numeric"
-                                            id = "Dato"
+                                            id="Dato"
                                             aria-label="Ingrese los datos de manera obligatoria"
                                             value={value}
-                                            onChange={handleInputChange}    
+                                            onChange={handleInputChange}
                                             placeholder={inputValue()}
                                             tabIndex={8}
                                             className="w-full py-1 px-4 border sm:text-lg focus:bg-blue-50 border-gray-500 rounded-3xl focus:outline-none focus:border-blue-500"
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                         />
-                                
+
                                         <div className='text-gray-400 mt-3' style={{ display: isParagraphVisible ? 'block' : 'none' }}>
                                             <span className='capitalize ml-5 text-lg'>{t("labelComboBox.ejemplo")}: </span>
                                             <span>{renderExample()}</span>
@@ -175,8 +179,8 @@ const BodyLandingPage = () => {
                                         </button>
                                     </div>
                                 </div>
-                                {errorMessage && <p  className="text-red-500 ml-56 text-center mt-2" role="alert">{t("labelComboBox.obligatorio")}</p>}
-                               
+                                {errorMessage && <p className="text-red-500 ml-56 text-center mt-2" role="alert">{t("labelComboBox.obligatorio")}</p>}
+
 
                             </form>
                         </div>
@@ -185,8 +189,8 @@ const BodyLandingPage = () => {
                     </div>
                     <div className='col-span-1 flex flex-col justify-between mr-8'>
                         <div className="relative inline-block">
-                            <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}  tabIndex={4} aria-label="Botón para seleccionar el idioma">
-                                <FontAwesomeIcon    
+                            <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)} tabIndex={4} aria-label="Botón para seleccionar el idioma">
+                                <FontAwesomeIcon
                                     icon={faGlobe}
                                     className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
                                 />
@@ -205,14 +209,23 @@ const BodyLandingPage = () => {
                                 </div>
                             )}
                         </div>
-                        <div onClick={openModal} tabIndex={9}>
-                        
-                            <a target="_blank" ><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"  /></a>
+                        <div onClick={openModal} >
+                            <nav>
+                                <button onClick={() => handleComponentChange()} tabIndex={9}>
+                                    <FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                                </button>
+                            </nav>
+                            {/* 
+                             <a target="_blank" ><FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" /></a>
+                            */}
+                           
 
                         </div>
+
+
                         {isModalOpen && (
-                <Help closeModal={closeModal} />
-            )}
+                            <Help closeModal={closeModal} />
+                        )}
                     </div>
                 </div>
             </div>

@@ -22,16 +22,19 @@ const Help = ({ closeModal }) => {
         setLanguageSelectorOpen(false);
     }
 
-    
+
 
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal} aria-modal="true" autoFocus tabIndex={0}>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal} aria-modal="true" >
             <div onClick={stopPropagation} className='flex flex-col h-screen bg-white overflow-y-auto' >
                 <Banner />
                 <div className='flex mt-[2%] mr-[2%] ml-[2%] justify-between'>
-                    <div onClick={closeModal}>  
-                        <FontAwesomeIcon aria-label={t("ayuda.idiomaSelec")} icon={faArrowLeft} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                    <div>
+                        <button onClick={closeModal} tabIndex={11}>
+                            <FontAwesomeIcon aria-label={t("ayuda.idiomaSelec")} icon={faArrowLeft} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                        </button>
+
                     </div>
                     <div className="relative inline-block">
                         <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}>
@@ -56,7 +59,7 @@ const Help = ({ closeModal }) => {
                     </div>
                 </div>
                 <div className='py-8 pl-24 flex-grow justify-around'>
-                    <div className='flex'
+                    <div className='flex' autoFocus tabIndex={10}
                         style={{ minHeight: '100%' }}>
                         <div className='flex-col w-11/12 mr-[4%]'>
                             <h1 className='text-3xl text-[#245383] font-medium uppercase'>{t("ayuda.titulo")}</h1>
