@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { faBook, faIdCard, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faIdCard, faGlobe,faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Banner from './Banner'
 import Footer from './Footer'
@@ -7,10 +7,14 @@ import { useTranslation } from "react-i18next";
 import HelpGlossary from './HelpGlossary';
 
 
-const Help = () => {
+
+const Help = ({ closeModal }) => {
     //Lenguaje Selector
     const { t, i18n } = useTranslation();
     const [isLanguageSelectorOpen, setLanguageSelectorOpen] = useState(false);
+    const stopPropagation = (event) => {
+        event.stopPropagation();
+    };
 
     const onClickLanguageChange = (e: any) => {
         const language = e.target.value;
@@ -20,8 +24,12 @@ const Help = () => {
 
 
     return (
-        <div className='flex flex-col h-screen'>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
+            <div onClick={stopPropagation} className='flex flex-col h-screen bg-white overflow-y-auto' >
             <Banner />
+            <div onClick={closeModal}>
+                    <FontAwesomeIcon icon={faArrowLeft} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+            </div>
             <div className='py-8 pl-10 flex-grow justify-around'>
                 <div className='flex'
                     style={{ minHeight: '100%' }}>
@@ -76,6 +84,8 @@ const Help = () => {
             </div>
             <Footer />
         </div>
+        </div>
+        
 
     )
 }
