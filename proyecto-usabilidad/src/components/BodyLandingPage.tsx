@@ -193,7 +193,7 @@ const BodyLandingPage = () => {
                             <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)} tabIndex={4} aria-label="Botón para seleccionar el idioma">
                                 <FontAwesomeIcon
                                     icon={faGlobe}
-                                    className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
+                                    className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
                                 />
                             </div>
                             {isLanguageSelectorOpen && (
@@ -213,7 +213,7 @@ const BodyLandingPage = () => {
                         <div onClick={openModal} >
                             <nav>
                                 <button onClick={() => handleComponentChange() }aria-label='Buton de ayuda' tabIndex={9}>
-                                    <FontAwesomeIcon icon={faQuestionCircle} className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
+                                    <FontAwesomeIcon icon={faQuestionCircle} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                                 </button>
                             </nav>                           
 
