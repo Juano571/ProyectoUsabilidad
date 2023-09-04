@@ -41,7 +41,7 @@ const BannerDetalles = ({ closeModal }) => {
                 </div>
 
                 <div className='flex mx-8 py-4 items-center text-white text-xl justify-center' role="navigation" aria-label="Navegación de componentes" tabIndex={0}>
-                    <nav className="flex space-x-4">
+                    <nav className="flex space-x-4" aria-label='Barra de navegación para ver detalles de pensiones alimenticias'>
                         <button onClick={() => handleComponentChange('informacion')} className="py-4 cursor-pointer transition duration-300 hover:bg-slate-600 w-80 text-center">
                             <h2 className='uppercase'>{t("bannerInfoGeneral.infogeneral")}</h2>
                         </button>
@@ -57,12 +57,12 @@ const BannerDetalles = ({ closeModal }) => {
             </div>
 
             <div>
-    {/* ... */}
-    {activeComponent === 'informacion' && <InformacionGeneral tabIndex={0} />}
-    {activeComponent === 'movimientos' && <MovimientosPendientes tabIndex={0} />}
-    {activeComponent === 'indexaciones' && <Indexaciones tabIndex={0} />}
-    {/* ... */}
-</div>
+                {/* ... */}
+                {activeComponent === 'informacion' && <InformacionGeneral tabIndex={0} />}
+                {activeComponent === 'movimientos' && <MovimientosPendientes tabIndex={0} />}
+                {activeComponent === 'indexaciones' && <Indexaciones tabIndex={0} />}
+                {/* ... */}
+            </div>
         </div>
     )
 }

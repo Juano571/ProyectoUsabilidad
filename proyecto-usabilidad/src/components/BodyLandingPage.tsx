@@ -125,18 +125,20 @@ const BodyLandingPage = () => {
     };
 
     return (
-        <div className='flex flex-col h-screen'>
-            <Banner></Banner>
+        <div className='flex flex-col h-screen'  role="main">
             <div className='py-8 pl-10 flex-grow justify-around'>
                 <div className='flex'
                     style={{ minHeight: '100%' }}>
                     <div className='flex-col w-11/12 mr-[4%]'>
-                        <h2 className='text-3xl text-[#245383] font-medium uppercase' tabIndex={3}>{t("header.tituloAlimentaria")}</h2>
+                        <div>
+                            <h1 className='text-3xl text-[#245383] font-medium uppercase' tabIndex={3}>{t("header.tituloAlimentaria")}</h1>
+                        </div>
                         <div className='flex py-10'>
-                            <form name='Formulario de pensiones alimenticias'>
+                            <form>
                                 <div className='flex'>
-                                    <label htmlFor='ComboboxCriterioBusqueda' className='pt-1 text-lg font-medium w-96' tabIndex={6} >{t("mainBody.criterio")}:</label>
-                                        <select id='ComboboxCriterioBusqueda' onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' aria-label="Menú para seleccionar el criterio de búsqueda" tabIndex={6}>
+                                    <label className='pt-1 text-lg font-medium w-96' tabIndex={6} >{t("mainBody.criterio")}:</label>
+                                    <div>
+                                        <select onChange={handleComboBoxChange} defaultValue='df' className='sm:text-lg px-4 py-[6px] border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl w-80 text-gray-800' aria-label="Menú para seleccionar el criterio de búsqueda" tabIndex={6}>
                                             <option value='df' hidden>{t("comboBox.seleccionarCriterio")}</option>
                                             <option value="representante_legal">{t("comboBox.cedulaRepresentante")}</option>
                                             <option value="deudor_principal">{t("comboBox.cedulaDeudor")}</option>
@@ -145,13 +147,13 @@ const BodyLandingPage = () => {
                                             <option value="codigo_imbabura">{t("comboBox.codigoImbabura")}</option>
                                             <option value="identificador_aprobacion">{t("comboBox.identificador")}</option>
                                         </select>
-                                    
+                                    </div>
                                 </div>
                                 <div className='mt-5 flex sm:flex-row sm:items-center'>
-                                    {selectedOption && <label htmlFor='Dato' className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>{t("labelComboBox.ingrese")} {inputValue()}*:</label>}
+                                    {selectedOption && <label className='sm:text-lg pb-8 font-medium sm:w-96 sm:mb-0' tabIndex={6}>{t("labelComboBox.ingrese")} {inputValue()}*:</label>}
                                     <div className="w-full sm:w-80" tabIndex={7}>
 
-                                        <input  type="text"
+                                        <input type="text"
                                             required
                                             pattern="\d*"
                                             inputMode="numeric"
@@ -165,7 +167,7 @@ const BodyLandingPage = () => {
                                             style={{ display: isParagraphVisible ? 'block' : 'none' }}
                                         />
 
-                                        <div className='text-black-400 mt-3' style={{ display: isParagraphVisible ? 'block' : 'none' }}>
+                                        <div className='text-gray-600 mt-3' style={{ display: isParagraphVisible ? 'block' : 'none' }}>
                                             <span className='capitalize ml-5 text-lg'>{t("labelComboBox.ejemplo")}: </span>
                                             <span>{renderExample()}</span>
                                         </div>
@@ -179,7 +181,7 @@ const BodyLandingPage = () => {
                                         </button>
                                     </div>
                                 </div>
-                                {errorMessage && <p className="text-red-700 ml-56 text-center mt-2" role="alert">{t("labelComboBox.obligatorio")}</p>}
+                                {errorMessage && <p className="text-red-500 ml-56 text-center mt-2" role="alert">{t("labelComboBox.obligatorio")}</p>}
 
 
                             </form>
@@ -200,7 +202,7 @@ const BodyLandingPage = () => {
                                     className="absolute bottom-[-2.5rem] right-2 z-10"
                                     onClick={(e) => e.stopPropagation()}
                                 >
-                                    <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange} >
+                                    <select className="w-56 custom-select sm:text-lg px-4 py-1 border focus:border-blue-500 focus:bg-blue-50 border-gray-500 rounded-3xl text-gray-800" onChange={onClickLanguageChange} tabIndex={5}>
                                         <option value='df' hidden>{t("ayuda.idiomaSelec")}</option>
                                         <option value="es" >Español</option>
                                         <option value="qu" >Quechua</option>
@@ -211,10 +213,11 @@ const BodyLandingPage = () => {
                         </div>
                         <div onClick={openModal} >
                             <nav>
-                                <button onClick={() => handleComponentChange() }aria-label='Buton de ayuda' tabIndex={9}>
+                                <button onClick={() => handleComponentChange()} aria-label='Botón de ayuda' tabIndex={9}>
                                     <FontAwesomeIcon icon={faQuestionCircle} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                                 </button>
-                            </nav>                           
+                            </nav>
+
                         </div>
 
 
@@ -224,7 +227,6 @@ const BodyLandingPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer ></Footer>
         </div>
     )
 }

@@ -22,16 +22,13 @@ const Help = ({ closeModal }) => {
         setLanguageSelectorOpen(false);
     }
 
-
-
-
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal} aria-modal="true" >
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal} >
             <div onClick={stopPropagation} className='flex flex-col h-screen bg-white overflow-y-auto' >
                 <Banner />
                 <div className='flex mt-[2%] mr-[2%] ml-[2%] justify-between'>
                     <div>
-                        <button onClick={closeModal} tabIndex={11}>
+                        <button onClick={closeModal} tabIndex={11} aria-label='Flecha para regresar a la página principal'>
                             <FontAwesomeIcon aria-label={t("ayuda.idiomaSelec")} icon={faArrowLeft} className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]" />
                         </button>
 
