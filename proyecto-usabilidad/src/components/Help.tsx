@@ -40,7 +40,7 @@ const Help = ({ closeModal }) => {
                         <div onClick={() => setLanguageSelectorOpen(!isLanguageSelectorOpen)}>
                             <FontAwesomeIcon
                                 icon={faGlobe}
-                                className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
+                                className="hover:text-blue-500 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mr-2 text-[#245383]"
                             />
                         </div>
                         {isLanguageSelectorOpen && (
@@ -65,7 +65,7 @@ const Help = ({ closeModal }) => {
                             <h1 className='text-3xl text-[#245383] font-medium uppercase'>{t("ayuda.titulo")}</h1>
                             <div className='flex-col text-center items-center justify-center pt-8 ml-10'>
                                 <div className='flex'>
-                                    <FontAwesomeIcon icon={faIdCard} className="w-8 h-8 mr-6 bg-white text-[#245383] rounded-full" />
+                                    <FontAwesomeIcon icon={faIdCard} className="hover:text-blue-500 w-8 h-8 mr-6 bg-white text-[#245383] rounded-full" />
                                     <h1 className='text-2xl font-semibold uppercase'>{t("ayuda.servicio")}</h1>
                                 </div>
                                 <div className='flex my-4'>
@@ -77,7 +77,7 @@ const Help = ({ closeModal }) => {
 
                             <div className='flex-col text-center items-center justify-center pt-8 ml-10'>
                                 <div className='flex'>
-                                    <FontAwesomeIcon icon={faBook} className="w-8 h-8 mr-6 bg-white text-[#245383] rounded-full" />
+                                    <FontAwesomeIcon icon={faBook} className="hover:text-blue-500 w-8 h-8 mr-6 bg-white text-[#245383] rounded-full" />
                                     <h1 className='text-2xl font-semibold uppercase'>{t("ayuda.glosario")}</h1>
                                 </div>
                                 <div className='ml-20'>
